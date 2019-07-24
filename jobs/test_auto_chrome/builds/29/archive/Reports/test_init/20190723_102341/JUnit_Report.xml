@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<testsuites name="test_init" time="157" tests="3" failures="0" errors="0">
+    <testsuite name="test_init" tests="3" failures="0" errors="0" time="157" timestamp="2019-07-23 10:23:57" hostname="jenkins - 56a4f166d459" id="Test Suites/test_init">
+        <properties>
+            <property name="deviceName" value=""/>
+            <property name="devicePlatform" value=""/>
+            <property name="logFolder" value="/var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190723_102341"/>
+            <property name="logFiles" value="/var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190723_102341/execution0.log"/>
+            <property name="attachments" value="Reports/screenshots/chrome_checkpoint1.png, Reports/screenshots/chrome_checkpoint2.png, Reports/screenshots/chrome_checkpoint3.png, Reports/screenshots/chrome_checkpoint4.png, Reports/screenshots/chrome_checkpoint1.png, Reports/screenshots/chrome_checkpoint2.png, Reports/screenshots/chrome_checkpoint3.png, Reports/screenshots/chrome_checkpoint4.png, Reports/screenshots/chrome_checkpoint1.png, Reports/screenshots/chrome_checkpoint2.png, Reports/screenshots/chrome_checkpoint3.png, Reports/screenshots/chrome_checkpoint4.png"/>
+            <property name="hostName" value="jenkins - 56a4f166d459"/>
+            <property name="os" value="Linux 64bit"/>
+            <property name="katalonVersion" value="6.2.1.2"/>
+            <property name="browser" value="Chrome 75.0.3770.142"/>
+            <property name="hostAddress" value="172.17.0.3"/>
+            <property name="sessionId" value="e1621b5cbbf913f538914675d8c7fb67"/>
+            <property name="seleniumVersion" value="3.141.59"/>
+            <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+            <property name="platform" value="Linux"/>
+        </properties>
+        <testcase name="Test Cases/test_case_chrome" classname="Test Cases/test_case_chrome" status="PASSED">
+            <system-out>2019-07-23 10:23:59 - [TEST_CASE][PASSED] - Test Cases/test_case_chrome: Test Cases/test_case_chrome
+
+2019-07-23 10:24:01 - [TEST_STEP][PASSED] - openBrowser("https://www.google.fr/"): Browser is opened with url: 'https://www.google.fr/'
+
+2019-07-23 10:24:02 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-07-23 10:24:03 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-07-23 10:24:14 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.google.fr/'
+
+2019-07-23 10:24:14 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Google/input_Connexion_q"), "docker hub"): Text 'docker hub' is set on object 'Object Repository/Page_Google/input_Connexion_q'
+
+2019-07-23 10:24:15 - [MESSAGE][PASSED] - Text 'docker hub' is set on object 'Object Repository/Page_Google/input_Connexion_q'
+
+2019-07-23 10:24:15 - [TEST_STEP][PASSED] - click(findTestObject("Page_Google/bouton_recherche")): Object: 'Object Repository/Page_Google/bouton_recherche' is clicked on
+
+2019-07-23 10:24:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Google/bouton_recherche' is clicked on
+
+2019-07-23 10:24:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub")): Object: 'Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub' is clicked on
+
+2019-07-23 10:24:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub' is clicked on
+
+2019-07-23 10:24:29 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-07-23 10:24:29 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-07-23 10:24:29 - [TEST_STEP][PASSED] - takeScreenshot("Reports/screenshots/chrome_checkpoint1.png"): Taking screenshot successfully
+
+2019-07-23 10:24:31 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|Reports/screenshots/chrome_checkpoint1.png]]
+
+2019-07-23 10:24:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Docker Hub/div_Sign In")): Object: 'Object Repository/Page_Docker Hub/div_Sign In' is clicked on
+
+2019-07-23 10:24:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Docker Hub/div_Sign In' is clicked on
+
+2019-07-23 10:24:33 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-07-23 10:24:33 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-07-23 10:24:33 - [TEST_STEP][PASSED] - takeScreenshot("Reports/screenshots/chrome_checkpoint2.png"): Taking screenshot successfully
+
+2019-07-23 10:24:36 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|Reports/screenshots/chrome_checkpoint2.png]]
+
+2019-07-23 10:24:36 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Log in to Docker/input_Docker ID_nw_username"), "bart_the_wacky@hotmail.com"): Text 'bart_the_wacky@hotmail.com' is set on object 'Object Repository/Page_Log in to Docker/input_Docker ID_nw_username'
+
+2019-07-23 10:24:37 - [MESSAGE][PASSED] - Text 'bart_the_wacky@hotmail.com' is set on object 'Object Repository/Page_Log in to Docker/input_Docker ID_nw_username'
+
+2019-07-23 10:24:37 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Page_Log in to Docker/input_Password_nw_password"), "mvMLieaRys7gdrS5YCR2pQ=="): Text ****** has been set on object 'Object Repository/Page_Log in to Docker/input_Password_nw_password'
+
+2019-07-23 10:24:38 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Log in to Docker/input_Password_nw_password'
+
+2019-07-23 10:24:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Log in to Docker/button_Sign In")): Object: 'Object Repository/Page_Log in to Docker/button_Sign In' is clicked on
+
+2019-07-23 10:24:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Log in to Docker/button_Sign In' is clicked on
+
+2019-07-23 10:24:39 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+2019-07-23 10:24:47 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-07-23 10:24:47 - [TEST_STEP][PASSED] - takeScreenshot("Reports/screenshots/chrome_checkpoint3.png"): Taking screenshot successfully
+
+2019-07-23 10:24:48 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|Reports/screenshots/chrome_checkpoint3.png]]
+
+2019-07-23 10:24:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Docker Hub/span_squashtf_test")): Object: 'Object Repository/Page_Docker Hub/span_squashtf_test' is clicked on
+
+2019-07-23 10:24:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Docker Hub/span_squashtf_test' is clicked on
+
+2019-07-23 10:24:53 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+2019-07-23 10:24:54 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-07-23 10:24:54 - [TEST_STEP][PASSED] - takeScreenshot("Reports/screenshots/chrome_checkpoint4.png"): Taking screenshot successfully
+
+2019-07-23 10:24:55 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|Reports/screenshots/chrome_checkpoint4.png]]
+
+2019-07-23 10:24:55 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-07-23 10:24:55 - [MESSAGE][PASSED] - Browser is closed</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/test_case_chrome" classname="Test Cases/test_case_chrome" status="PASSED">
+            <system-out>2019-07-23 10:24:58 - [TEST_CASE][PASSED] - Test Cases/test_case_chrome: Test Cases/test_case_chrome
+
+2019-07-23 10:24:58 - [TEST_STEP][PASSED] - openBrowser("https://www.google.fr/"): Browser is opened with url: 'https://www.google.fr/'
+
+2019-07-23 10:24:58 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-07-23 10:25:04 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.google.fr/'
+
+2019-07-23 10:25:04 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Google/input_Connexion_q"), "docker hub"): Text 'docker hub' is set on object 'Object Repository/Page_Google/input_Connexion_q'
+
+2019-07-23 10:25:05 - [MESSAGE][PASSED] - Text 'docker hub' is set on object 'Object Repository/Page_Google/input_Connexion_q'
+
+2019-07-23 10:25:05 - [TEST_STEP][PASSED] - click(findTestObject("Page_Google/bouton_recherche")): Object: 'Object Repository/Page_Google/bouton_recherche' is clicked on
+
+2019-07-23 10:25:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Google/bouton_recherche' is clicked on
+
+2019-07-23 10:25:08 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub")): Object: 'Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub' is clicked on
+
+2019-07-23 10:25:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub' is clicked on
+
+2019-07-23 10:25:18 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-07-23 10:25:18 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-07-23 10:25:18 - [TEST_STEP][PASSED] - takeScreenshot("Reports/screenshots/chrome_checkpoint1.png"): Taking screenshot successfully
+
+2019-07-23 10:25:19 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|Reports/screenshots/chrome_checkpoint1.png]]
+
+2019-07-23 10:25:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Docker Hub/div_Sign In")): Object: 'Object Repository/Page_Docker Hub/div_Sign In' is clicked on
+
+2019-07-23 10:25:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Docker Hub/div_Sign In' is clicked on
+
+2019-07-23 10:25:22 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-07-23 10:25:22 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-07-23 10:25:22 - [TEST_STEP][PASSED] - takeScreenshot("Reports/screenshots/chrome_checkpoint2.png"): Taking screenshot successfully
+
+2019-07-23 10:25:25 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|Reports/screenshots/chrome_checkpoint2.png]]
+
+2019-07-23 10:25:25 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Log in to Docker/input_Docker ID_nw_username"), "bart_the_wacky@hotmail.com"): Text 'bart_the_wacky@hotmail.com' is set on object 'Object Repository/Page_Log in to Docker/input_Docker ID_nw_username'
+
+2019-07-23 10:25:26 - [MESSAGE][PASSED] - Text 'bart_the_wacky@hotmail.com' is set on object 'Object Repository/Page_Log in to Docker/input_Docker ID_nw_username'
+
+2019-07-23 10:25:26 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Page_Log in to Docker/input_Password_nw_password"), "mvMLieaRys7gdrS5YCR2pQ=="): Text ****** has been set on object 'Object Repository/Page_Log in to Docker/input_Password_nw_password'
+
+2019-07-23 10:25:26 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Log in to Docker/input_Password_nw_password'
+
+2019-07-23 10:25:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Log in to Docker/button_Sign In")): Object: 'Object Repository/Page_Log in to Docker/button_Sign In' is clicked on
+
+2019-07-23 10:25:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Log in to Docker/button_Sign In' is clicked on
+
+2019-07-23 10:25:27 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+2019-07-23 10:25:27 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-07-23 10:25:27 - [TEST_STEP][PASSED] - takeScreenshot("Reports/screenshots/chrome_checkpoint3.png"): Taking screenshot successfully
+
+2019-07-23 10:25:36 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|Reports/screenshots/chrome_checkpoint3.png]]
+
+2019-07-23 10:25:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Docker Hub/span_squashtf_test")): Object: 'Object Repository/Page_Docker Hub/span_squashtf_test' is clicked on
+
+2019-07-23 10:25:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Docker Hub/span_squashtf_test' is clicked on
+
+2019-07-23 10:25:42 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+2019-07-23 10:25:43 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-07-23 10:25:43 - [TEST_STEP][PASSED] - takeScreenshot("Reports/screenshots/chrome_checkpoint4.png"): Taking screenshot successfully
+
+2019-07-23 10:25:44 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|Reports/screenshots/chrome_checkpoint4.png]]
+
+2019-07-23 10:25:44 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-07-23 10:25:44 - [MESSAGE][PASSED] - Browser is closed</system-out>
+            <system-err></system-err>
+        </testcase>
+        <testcase name="Test Cases/test_case_chrome" classname="Test Cases/test_case_chrome" status="PASSED">
+            <system-out>2019-07-23 10:25:46 - [TEST_CASE][PASSED] - Test Cases/test_case_chrome: Test Cases/test_case_chrome
+
+2019-07-23 10:25:47 - [TEST_STEP][PASSED] - openBrowser("https://www.google.fr/"): Browser is opened with url: 'https://www.google.fr/'
+
+2019-07-23 10:25:47 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-07-23 10:25:53 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.google.fr/'
+
+2019-07-23 10:25:53 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Google/input_Connexion_q"), "docker hub"): Text 'docker hub' is set on object 'Object Repository/Page_Google/input_Connexion_q'
+
+2019-07-23 10:25:54 - [MESSAGE][PASSED] - Text 'docker hub' is set on object 'Object Repository/Page_Google/input_Connexion_q'
+
+2019-07-23 10:25:54 - [TEST_STEP][PASSED] - click(findTestObject("Page_Google/bouton_recherche")): Object: 'Object Repository/Page_Google/bouton_recherche' is clicked on
+
+2019-07-23 10:25:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Google/bouton_recherche' is clicked on
+
+2019-07-23 10:25:57 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub")): Object: 'Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub' is clicked on
+
+2019-07-23 10:26:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub' is clicked on
+
+2019-07-23 10:26:08 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-07-23 10:26:08 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-07-23 10:26:08 - [TEST_STEP][PASSED] - takeScreenshot("Reports/screenshots/chrome_checkpoint1.png"): Taking screenshot successfully
+
+2019-07-23 10:26:09 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|Reports/screenshots/chrome_checkpoint1.png]]
+
+2019-07-23 10:26:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Docker Hub/div_Sign In")): Object: 'Object Repository/Page_Docker Hub/div_Sign In' is clicked on
+
+2019-07-23 10:26:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Docker Hub/div_Sign In' is clicked on
+
+2019-07-23 10:26:11 - [TEST_STEP][PASSED] - waitForPageLoad(5): Wait for page load successfully
+
+2019-07-23 10:26:11 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-07-23 10:26:11 - [TEST_STEP][PASSED] - takeScreenshot("Reports/screenshots/chrome_checkpoint2.png"): Taking screenshot successfully
+
+2019-07-23 10:26:14 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|Reports/screenshots/chrome_checkpoint2.png]]
+
+2019-07-23 10:26:14 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Log in to Docker/input_Docker ID_nw_username"), "bart_the_wacky@hotmail.com"): Text 'bart_the_wacky@hotmail.com' is set on object 'Object Repository/Page_Log in to Docker/input_Docker ID_nw_username'
+
+2019-07-23 10:26:15 - [MESSAGE][PASSED] - Text 'bart_the_wacky@hotmail.com' is set on object 'Object Repository/Page_Log in to Docker/input_Docker ID_nw_username'
+
+2019-07-23 10:26:15 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Object Repository/Page_Log in to Docker/input_Password_nw_password"), "mvMLieaRys7gdrS5YCR2pQ=="): Text ****** has been set on object 'Object Repository/Page_Log in to Docker/input_Password_nw_password'
+
+2019-07-23 10:26:16 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Log in to Docker/input_Password_nw_password'
+
+2019-07-23 10:26:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Log in to Docker/button_Sign In")): Object: 'Object Repository/Page_Log in to Docker/button_Sign In' is clicked on
+
+2019-07-23 10:26:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Log in to Docker/button_Sign In' is clicked on
+
+2019-07-23 10:26:16 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+2019-07-23 10:26:16 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-07-23 10:26:16 - [TEST_STEP][PASSED] - takeScreenshot("Reports/screenshots/chrome_checkpoint3.png"): Taking screenshot successfully
+
+2019-07-23 10:26:25 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|Reports/screenshots/chrome_checkpoint3.png]]
+
+2019-07-23 10:26:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Docker Hub/span_squashtf_test")): Object: 'Object Repository/Page_Docker Hub/span_squashtf_test' is clicked on
+
+2019-07-23 10:26:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Docker Hub/span_squashtf_test' is clicked on
+
+2019-07-23 10:26:31 - [TEST_STEP][PASSED] - waitForPageLoad(10): Wait for page load successfully
+
+2019-07-23 10:26:31 - [MESSAGE][PASSED] - Wait for page load successfully
+
+2019-07-23 10:26:31 - [TEST_STEP][PASSED] - takeScreenshot("Reports/screenshots/chrome_checkpoint4.png"): Taking screenshot successfully
+
+2019-07-23 10:26:32 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|Reports/screenshots/chrome_checkpoint4.png]]
+
+2019-07-23 10:26:32 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2019-07-23 10:26:33 - [MESSAGE][PASSED] - Browser is closed</system-out>
+            <system-err></system-err>
+        </testcase>
+        <system-out>2019-07-23 10:23:57 - [TEST_SUITE][INCOMPLETE] - test_init: null</system-out>
+        <system-err>2019-07-23 10:23:57 - [TEST_SUITE][INCOMPLETE] - test_init: null</system-err>
+    </testsuite>
+</testsuites>

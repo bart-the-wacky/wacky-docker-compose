@@ -1,0 +1,371 @@
+Started by user [8mha:////4AUDbHayNnIXFVFxdM0fFa7o2lPCAEQ0MdulVlSFXDq+AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+[EnvInject] - Preparing an environment for the build.
+[EnvInject] - Keeping Jenkins build variables.
+[EnvInject] - Injecting contributions.
+Building remotely on [8mha:////4I0qy5XH4KWpT5e2+egFi9tRSZ4yjmHGgzAOLY3bQOstAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQi/cT01LyS+JLU4hIApPToXMkAAAA=[0magent_test (chrome linux squashtf) in workspace /var/jenkins_home/workspace/test_job/test_auto
+using credential GitHub
+Cloning the remote Git repository
+Cloning repository https://github.com/bart-the-wacky/test_auto.git
+ > git init /var/jenkins_home/workspace/test_job/test_auto # timeout=10
+Fetching upstream changes from https://github.com/bart-the-wacky/test_auto.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials credentials pour Github
+ > git fetch --tags --progress https://github.com/bart-the-wacky/test_auto.git +refs/heads/*:refs/remotes/test_auto/*
+ > git config remote.test_auto.url https://github.com/bart-the-wacky/test_auto.git # timeout=10
+ > git config --add remote.test_auto.fetch +refs/heads/*:refs/remotes/test_auto/* # timeout=10
+ > git config remote.test_auto.url https://github.com/bart-the-wacky/test_auto.git # timeout=10
+Fetching upstream changes from https://github.com/bart-the-wacky/test_auto.git
+using GIT_ASKPASS to set credentials credentials pour Github
+ > git fetch --tags --progress https://github.com/bart-the-wacky/test_auto.git +refs/heads/*:refs/remotes/test_auto/*
+ > git rev-parse refs/remotes/test_auto/test_auto^{commit} # timeout=10
+ > git rev-parse refs/remotes/test_auto/test_auto/test_auto^{commit} # timeout=10
+Checking out Revision a9bd295113379f567bf704b612af997cded63e14 (refs/remotes/test_auto/test_auto)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a9bd295113379f567bf704b612af997cded63e14
+Commit message: "derniere modif pour le screenshot 3"
+ > git rev-list --no-walk a9bd295113379f567bf704b612af997cded63e14 # timeout=10
+Checking for pre-build
+Executing pre-build step
+Checking if email needs to be generated
+No emails were triggered.
+Katalon Studio package has been downloaded already.
+Using Katalon Studio at /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1
+Making driver executables...
+Drivers folder at: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/drivers
+Set chromedriver as executable !
+Set geckodriver as executable !
+Execute [sh, -c, xvfb-run -a -n 0 -s "-screen 1 1280x1024x24" /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/katalon -noSplash  -runMode=console  -projectPath="/var/jenkins_home/workspace/test_job/test_auto"  -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/test_init" --config -webui.autoUpdateDrivers=true --no-sandbox -apiKey=4d90b6b4-8dcd-4242-968b-06128a89eaa2 -reportFolder="/var/jenkins_home/workspace/test_job/test_auto/Reports/test_init" -reportFileName="$BUILD_TAG""_chrome" ] in /tmp/katalon-5392149211481979862
+Katalon workspace folder is set to default location: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/config
+Starting Groovy-Eclipse compiler resolver.  Specified compiler level: unspecified
+170 2.4.7.xx-201611170128-e46 = ACTIVE
+
+
+INFO: Katalon Version: 6.2.1
+INFO: Command-line arguments: -runMode=console -projectPath=/var/jenkins_home/workspace/test_job/test_auto -browserType=Chrome -retry=0 -statusDelay=15 -testSuitePath=Test Suites/test_init --config -webui.autoUpdateDrivers=true --no-sandbox -apiKey=****** -reportFolder=/var/jenkins_home/workspace/test_job/test_auto/Reports/test_init -reportFileName=jenkins-test_auto_chrome-38_chrome
+INFO: User working dir: /tmp/katalon-5392149211481979862
+INFO: User home: /home/jenkins
+INFO: Java vendor: Oracle Corporation
+INFO: Java version: 1.8.0_171
+INFO: Local OS: Linux 64bit
+INFO: CPU load: 97%
+INFO: Total memory: 3948 MB
+INFO: Free memory: 1499 MB
+
+
+Start reloading plugins...
+Latest plugins responses: [{"id":16173,"status":1,"expiration_date":null,"created_at":"2019-07-17T12:12:23.509Z","updated_at":"2019-07-17T12:12:23.509Z","active":true,"send_expiration_mail":false,"send_expiration_reminder_mail":false,"user_id":10729,"bundled_plugin_id":null,"product":{"id":59,"plugin_id":null,"name":"Basic Report","description":"Basic Report Plugin is a Custom Keyword that replaces for the current Report feature of Katalon Studio. Since version 6.1.5, the Report feature has been migrated to Basic Report plugin.","logo":"m3j3hddvlvinco5i-BasicReport_140px.png","repository":"https://github.com/katalon-studio/katalon-studio-basic-report-plugin","documentation":"https://github.com/katalon-studio/katalon-studio-report-plugin/blob/master/docs/tutorials/usage.md","reference":null,"license":"","release_date":null,"qa_url":null,"status":1,"created_at":"2019-04-26T09:41:28.208Z","updated_at":"2019-06-20T08:47:11.762Z","overview":"Basic Report Plugin is a Custom Keyword that replaces for the current Report feature of Katalon Studio. Since [version 6.1.5](https://docs.katalon.com/katalon-studio/new/version-615.html), the Report feature has been migrated to Basic Report plugin.  Users need to install this plugin to continue using the feature.\r\n\r\n### Basic Report Plugin provides:\r\n- Generates automatically report from Test Suite report after every test execution with various formats: HTML, CSV, JUnit, and PDF.\r\n- Allows users to export manually Test Suite and Test Suite collection report to HTML, CSV, JUnit, and PDF. Right click on the report and choose Export as.\r\n\r\nFor more details, refer to [Basic Report document](https://docs.katalon.com/katalon-studio/docs/basic-report.html).\r\n","price":null,"stripe_product_id":null,"reject_reason":null,"latest_version_number":null,"product_type_id":2,"marketplace_id":null,"product_versions":[{"id":118,"number":"1.0.2","status":1,"created_at":"2019-05-15T04:35:14.552Z","updated_at":"2019-06-20T08:47:20.952Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""},{"id":99,"number":"1.0.1","status":1,"created_at":"2019-04-26T09:41:28.242Z","updated_at":"2019-06-20T08:47:20.953Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""},{"id":145,"number":"1.0.5","status":1,"created_at":"2019-06-20T08:44:52.820Z","updated_at":"2019-06-20T08:47:20.944Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},{"id":129,"number":"1.0.4","status":1,"created_at":"2019-05-24T09:48:58.985Z","updated_at":"2019-06-20T08:47:20.947Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},{"id":127,"number":"1.0.3","status":1,"created_at":"2019-05-24T02:43:18.285Z","updated_at":"2019-06-20T08:47:20.949Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""}],"product_type":{"id":2,"name":"Custom Keywords Plugin","description":"Custom Keywords Plugin","sequence":1,"created_at":"2019-03-14T08:13:50.036Z","updated_at":"2019-03-14T08:13:50.036Z","view_type":0},"product_categories":[{"id":2,"name":"Utilities","short_name":"","description":"Utilities","order":2,"hide":false,"use_carousel":true,"created_at":"2019-06-13T08:48:28.556Z","updated_at":"2019-06-13T08:48:28.556Z","product_join_category":{"id":22,"created_at":"2019-06-13T08:47:46.501Z","updated_at":"2019-06-13T08:47:46.501Z","product_id":59,"category_id":2}}],"logoUrl":"https://katalon-store.s3.amazonaws.com/m3j3hddvlvinco5i-BasicReport_140px.png","categories":"Utilities","url":"/product/59"},"license_type":{"id":1,"name":"Free","active":true,"day":null,"month":null,"year":null,"created_at":"2019-01-30T01:47:14.080Z","updated_at":"2019-01-30T01:47:14.080Z"},"free":true,"trial":false,"paid":false,"expired":false,"canceled":false,"uninstalled":false,"finalized":false,"compatible_versions":[{"id":118,"number":"1.0.2","status":1,"created_at":"2019-05-15T04:35:14.552Z","updated_at":"2019-06-20T08:47:20.952Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""},{"id":99,"number":"1.0.1","status":1,"created_at":"2019-04-26T09:41:28.242Z","updated_at":"2019-06-20T08:47:20.953Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""},{"id":145,"number":"1.0.5","status":1,"created_at":"2019-06-20T08:44:52.820Z","updated_at":"2019-06-20T08:47:20.944Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},{"id":129,"number":"1.0.4","status":1,"created_at":"2019-05-24T09:48:58.985Z","updated_at":"2019-06-20T08:47:20.947Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},{"id":127,"number":"1.0.3","status":1,"created_at":"2019-05-24T02:43:18.285Z","updated_at":"2019-06-20T08:47:20.949Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""}],"latest_compatible_version":{"id":145,"number":"1.0.5","status":1,"created_at":"2019-06-20T08:44:52.820Z","updated_at":"2019-06-20T08:47:20.944Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},"current_version":{"id":145,"number":"1.0.5","status":1,"created_at":"2019-06-20T08:44:52.820Z","updated_at":"2019-06-20T08:47:20.944Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},"latest_version":{"id":145,"number":"1.0.5","status":1,"created_at":"2019-06-20T08:44:52.820Z","updated_at":"2019-06-20T08:47:20.944Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},"created_date":"July 17th 2019, 12:12 pm"}]
+Katalon version: 6.2.1
+Plugin info URL: https://store.katalon.com/api/products/ks?appVersion=6.2.1
+Plugin info: {
+  "expired": false,
+  "productId": 59,
+  "name": "Basic Report",
+  "id": 16173
+}
+Plugin ID: 16173. Plugin location: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/plugin/install/16173/1.0.5/katalon-studio-report-plugin.jar.
+Plugin "Basic Report" has been installed.
+Project path is a folder.
+Examine file 'test_auto.prj'.
+Found project file '/var/jenkins_home/workspace/test_job/test_auto/test_auto.prj'.
+Examine file '.project'.
+Examine folder 'Scripts'.
+Examine folder '.git'.
+Examine folder '.vscode'.
+Examine folder 'Test Cases'.
+Examine folder 'Object Repository'.
+Examine folder 'Libs'.
+Examine folder 'Test Suites'.
+Examine folder '.settings'.
+Examine folder 'bin'.
+Examine file 'README.md'.
+Examine folder 'Profiles'.
+Examine folder 'Include'.
+Examine folder 'settings'.
+Examine file 'console.properties'.
+Examine file '.classpath'.
+Delete folder: bin
+Delete folder: Libs
+Opening project file: /var/jenkins_home/workspace/test_job/test_auto/test_auto.prj
+Parsing custom keywords in Plugins folder...
+Generating global variables...
+Parsing custom keywords...
+Project 'test_auto' opened
+[INFO] Using WebDriverManager to resolve chrome
+[DEBUG] Driver for chrome75 not found in local properties
+[INFO] Using chromedriver 75.0.3770.140 (since Google Chrome 75 is installed in your machine)
+[INFO] Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+[INFO] Downloading https://chromedriver.storage.googleapis.com/75.0.3770.140/chromedriver_linux64.zip
+[INFO] Extracting binary from compressed file chromedriver_linux64.zip
+[INFO] Overriding former binary /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/temp/webdriver/chromedriver
+[INFO] Resulting binary /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/temp/webdriver/chromedriver
+Chrome driver is located at: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/temp/webdriver/chromedriver
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190723_122644.........................0/3(0%)
+--------------------------------------------------------------------------------
+
+2019-07-23 12:27:00.331 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/test_init
+2019-07-23 12:27:00.695 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = jenkins - 56a4f166d459
+2019-07-23 12:27:00.706 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Linux 64bit
+2019-07-23 12:27:00.712 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 172.17.0.3
+2019-07-23 12:27:00.721 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 6.2.1.2
+2019-07-23 12:27:01.968 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2019-07-23 12:27:01.972 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/test_case_chrome
+Start recording video for test case 'Test Cases/test_case_chrome'.
+2019-07-23 12:27:04.928 DEBUG testcase.test_case_chrome                - 1: openBrowser("https://www.google.fr/")
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190723_122644.........................0/3(0%)
+--------------------------------------------------------------------------------
+
+2019-07-23 12:27:06.562 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+Jul 23, 2019 12:27:06 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+2019-07-23 12:27:06.799 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 seconds
+Starting ChromeDriver 75.0.3770.140 (2d9f97485c7b07dc18a74666574f19176731995c-refs/branch-heads/3770@{#1155}) on port 6011
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563884828.719][SEVERE]: bind() failed: Cannot assign requested address (99)
+Jul 23, 2019 12:27:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2019-07-23 12:27:15.819 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 4ca6ff9aa4225289b138a799978d155b
+2019-07-23 12:27:16.211 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 75.0.3770.142
+2019-07-23 12:27:16.217 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Linux
+2019-07-23 12:27:16.228 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 3.141.59
+2019-07-23 12:27:16.244 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}
+2019-07-23 12:27:19.483 DEBUG testcase.test_case_chrome                - 2: setText(findTestObject("Object Repository/Page_Google/input_Connexion_q"), "docker hub")
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190723_122644.........................0/3(0%)
+--------------------------------------------------------------------------------
+
+2019-07-23 12:27:21.792 DEBUG testcase.test_case_chrome                - 3: click(findTestObject("Page_Google/bouton_recherche"))
+2019-07-23 12:27:25.824 DEBUG testcase.test_case_chrome                - 4: click(findTestObject("Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub"))
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190723_122644.........................0/3(0%)
+--------------------------------------------------------------------------------
+
+2019-07-23 12:27:36.022 DEBUG testcase.test_case_chrome                - 5: waitForPageLoad(5)
+2019-07-23 12:27:36.586 DEBUG testcase.test_case_chrome                - 6: takeScreenshot("Reports/screenshots/chrome_checkpoint1.png")
+2019-07-23 12:27:37.987 DEBUG testcase.test_case_chrome                - 7: click(findTestObject("Object Repository/Page_Docker Hub/div_Sign In"))
+2019-07-23 12:27:40.713 DEBUG testcase.test_case_chrome                - 8: waitForPageLoad(5)
+2019-07-23 12:27:40.812 DEBUG testcase.test_case_chrome                - 9: takeScreenshot("Reports/screenshots/chrome_checkpoint2.png")
+2019-07-23 12:27:43.845 DEBUG testcase.test_case_chrome                - 10: setText(findTestObject("Object Repository/Page_Log in to Docker/input_Docker ID_nw_username"), "bart_the_wacky@hotmail.com")
+2019-07-23 12:27:44.924 DEBUG testcase.test_case_chrome                - 11: setEncryptedText(findTestObject("Object Repository/Page_Log in to Docker/input_Password_nw_password"), "mvMLieaRys7gdrS5YCR2pQ==")
+2019-07-23 12:27:45.941 DEBUG testcase.test_case_chrome                - 12: click(findTestObject("Object Repository/Page_Log in to Docker/button_Sign In"))
+2019-07-23 12:27:46.463 DEBUG testcase.test_case_chrome                - 13: waitForElementClickable(findTestObject("Page_Docker Hub/span_squashtf_test"), 15)
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190723_122644.........................0/3(0%)
+--------------------------------------------------------------------------------
+
+2019-07-23 12:27:56.306 DEBUG testcase.test_case_chrome                - 14: takeScreenshot("Reports/screenshots/chrome_checkpoint3.png")
+2019-07-23 12:27:57.073 DEBUG testcase.test_case_chrome                - 15: click(findTestObject("Object Repository/Page_Docker Hub/span_squashtf_test"))
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190723_122644.........................0/3(0%)
+--------------------------------------------------------------------------------
+
+2019-07-23 12:28:06.573 DEBUG testcase.test_case_chrome                - 16: waitForPageLoad(10)
+2019-07-23 12:28:06.769 DEBUG testcase.test_case_chrome                - 17: takeScreenshot("Reports/screenshots/chrome_checkpoint4.png")
+2019-07-23 12:28:08.237 DEBUG testcase.test_case_chrome                - 18: closeBrowser()
+Video recording for test case 'Test Cases/test_case_chrome' .
+2019-07-23 12:28:10.870 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/test_case_chrome
+2019-07-23 12:28:10.919 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2019-07-23 12:28:10.923 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/test_case_chrome
+Start recording video for test case 'Test Cases/test_case_chrome'.
+2019-07-23 12:28:11.003 DEBUG testcase.test_case_chrome                - 1: openBrowser("https://www.google.fr/")
+2019-07-23 12:28:11.029 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+Jul 23, 2019 12:28:11 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 75.0.3770.140 (2d9f97485c7b07dc18a74666574f19176731995c-refs/branch-heads/3770@{#1155}) on port 10427
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563884891.197][SEVERE]: bind() failed: Cannot assign requested address (99)
+Jul 23, 2019 12:28:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2019-07-23 12:28:15.514 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = fc9864fc11de1e3487000db52d7df088
+2019-07-23 12:28:15.814 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 75.0.3770.142
+2019-07-23 12:28:15.819 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Linux
+2019-07-23 12:28:15.828 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 3.141.59
+2019-07-23 12:28:15.844 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}
+2019-07-23 12:28:18.403 DEBUG testcase.test_case_chrome                - 2: setText(findTestObject("Object Repository/Page_Google/input_Connexion_q"), "docker hub")
+2019-07-23 12:28:19.375 DEBUG testcase.test_case_chrome                - 3: click(findTestObject("Page_Google/bouton_recherche"))
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190723_122644........................1/3(33%)
+--------------------------------------------------------------------------------
+
+2019-07-23 12:28:22.561 DEBUG testcase.test_case_chrome                - 4: click(findTestObject("Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub"))
+2019-07-23 12:28:33.527 DEBUG testcase.test_case_chrome                - 5: waitForPageLoad(5)
+2019-07-23 12:28:33.593 DEBUG testcase.test_case_chrome                - 6: takeScreenshot("Reports/screenshots/chrome_checkpoint1.png")
+2019-07-23 12:28:34.208 DEBUG testcase.test_case_chrome                - 7: click(findTestObject("Object Repository/Page_Docker Hub/div_Sign In"))
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190723_122644........................1/3(33%)
+--------------------------------------------------------------------------------
+
+2019-07-23 12:28:36.552 DEBUG testcase.test_case_chrome                - 8: waitForPageLoad(5)
+2019-07-23 12:28:36.629 DEBUG testcase.test_case_chrome                - 9: takeScreenshot("Reports/screenshots/chrome_checkpoint2.png")
+2019-07-23 12:28:39.139 DEBUG testcase.test_case_chrome                - 10: setText(findTestObject("Object Repository/Page_Log in to Docker/input_Docker ID_nw_username"), "bart_the_wacky@hotmail.com")
+2019-07-23 12:28:40.175 DEBUG testcase.test_case_chrome                - 11: setEncryptedText(findTestObject("Object Repository/Page_Log in to Docker/input_Password_nw_password"), "mvMLieaRys7gdrS5YCR2pQ==")
+2019-07-23 12:28:40.922 DEBUG testcase.test_case_chrome                - 12: click(findTestObject("Object Repository/Page_Log in to Docker/button_Sign In"))
+2019-07-23 12:28:41.308 DEBUG testcase.test_case_chrome                - 13: waitForElementClickable(findTestObject("Page_Docker Hub/span_squashtf_test"), 15)
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190723_122644........................1/3(33%)
+--------------------------------------------------------------------------------
+
+2019-07-23 12:28:50.700 DEBUG testcase.test_case_chrome                - 14: takeScreenshot("Reports/screenshots/chrome_checkpoint3.png")
+2019-07-23 12:28:51.697 DEBUG testcase.test_case_chrome                - 15: click(findTestObject("Object Repository/Page_Docker Hub/span_squashtf_test"))
+2019-07-23 12:28:58.188 DEBUG testcase.test_case_chrome                - 16: waitForPageLoad(10)
+2019-07-23 12:28:58.370 DEBUG testcase.test_case_chrome                - 17: takeScreenshot("Reports/screenshots/chrome_checkpoint4.png")
+2019-07-23 12:29:00.093 DEBUG testcase.test_case_chrome                - 18: closeBrowser()
+Video recording for test case 'Test Cases/test_case_chrome' .
+2019-07-23 12:29:02.669 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/test_case_chrome
+2019-07-23 12:29:02.705 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2019-07-23 12:29:02.712 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/test_case_chrome
+Start recording video for test case 'Test Cases/test_case_chrome'.
+2019-07-23 12:29:02.813 DEBUG testcase.test_case_chrome                - 1: openBrowser("https://www.google.fr/")
+2019-07-23 12:29:02.826 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+Jul 23, 2019 12:29:02 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 75.0.3770.140 (2d9f97485c7b07dc18a74666574f19176731995c-refs/branch-heads/3770@{#1155}) on port 23849
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563884942.940][SEVERE]: bind() failed: Cannot assign requested address (99)
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190723_122644........................2/3(67%)
+--------------------------------------------------------------------------------
+
+Jul 23, 2019 12:29:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2019-07-23 12:29:06.003 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 5c10d16d1dc11b1c3f45f2e0f9d7f830
+2019-07-23 12:29:06.330 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 75.0.3770.142
+2019-07-23 12:29:06.336 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Linux
+2019-07-23 12:29:06.341 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 3.141.59
+2019-07-23 12:29:06.348 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}
+2019-07-23 12:29:08.956 DEBUG testcase.test_case_chrome                - 2: setText(findTestObject("Object Repository/Page_Google/input_Connexion_q"), "docker hub")
+2019-07-23 12:29:09.995 DEBUG testcase.test_case_chrome                - 3: click(findTestObject("Page_Google/bouton_recherche"))
+2019-07-23 12:29:13.676 DEBUG testcase.test_case_chrome                - 4: click(findTestObject("Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub"))
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190723_122644........................2/3(67%)
+--------------------------------------------------------------------------------
+
+2019-07-23 12:29:24.759 DEBUG testcase.test_case_chrome                - 5: waitForPageLoad(5)
+2019-07-23 12:29:24.833 DEBUG testcase.test_case_chrome                - 6: takeScreenshot("Reports/screenshots/chrome_checkpoint1.png")
+2019-07-23 12:29:25.490 DEBUG testcase.test_case_chrome                - 7: click(findTestObject("Object Repository/Page_Docker Hub/div_Sign In"))
+2019-07-23 12:29:27.648 DEBUG testcase.test_case_chrome                - 8: waitForPageLoad(5)
+2019-07-23 12:29:27.702 DEBUG testcase.test_case_chrome                - 9: takeScreenshot("Reports/screenshots/chrome_checkpoint2.png")
+2019-07-23 12:29:30.593 DEBUG testcase.test_case_chrome                - 10: setText(findTestObject("Object Repository/Page_Log in to Docker/input_Docker ID_nw_username"), "bart_the_wacky@hotmail.com")
+2019-07-23 12:29:31.645 DEBUG testcase.test_case_chrome                - 11: setEncryptedText(findTestObject("Object Repository/Page_Log in to Docker/input_Password_nw_password"), "mvMLieaRys7gdrS5YCR2pQ==")
+2019-07-23 12:29:32.310 DEBUG testcase.test_case_chrome                - 12: click(findTestObject("Object Repository/Page_Log in to Docker/button_Sign In"))
+2019-07-23 12:29:32.823 DEBUG testcase.test_case_chrome                - 13: waitForElementClickable(findTestObject("Page_Docker Hub/span_squashtf_test"), 15)
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190723_122644........................2/3(67%)
+--------------------------------------------------------------------------------
+
+2019-07-23 12:29:41.482 DEBUG testcase.test_case_chrome                - 14: takeScreenshot("Reports/screenshots/chrome_checkpoint3.png")
+2019-07-23 12:29:42.425 DEBUG testcase.test_case_chrome                - 15: click(findTestObject("Object Repository/Page_Docker Hub/span_squashtf_test"))
+2019-07-23 12:29:48.173 DEBUG testcase.test_case_chrome                - 16: waitForPageLoad(10)
+2019-07-23 12:29:48.707 DEBUG testcase.test_case_chrome                - 17: takeScreenshot("Reports/screenshots/chrome_checkpoint4.png")
+2019-07-23 12:29:49.571 DEBUG testcase.test_case_chrome                - 18: closeBrowser()
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190723_122644........................2/3(67%)
+--------------------------------------------------------------------------------
+
+Video recording for test case 'Test Cases/test_case_chrome' .
+2019-07-23 12:29:52.119 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/test_case_chrome
+2019-07-23 12:29:54.481 INFO  com.kms.katalon.core.util.KeywordUtil    - Start generating HTML report folder at: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190723_122644...
+2019-07-23 12:29:54.589 INFO  com.kms.katalon.core.util.KeywordUtil    - HTML report generated
+2019-07-23 12:29:54.593 INFO  com.kms.katalon.core.util.KeywordUtil    - Start generating CSV report folder at: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190723_122644...
+2019-07-23 12:29:54.702 INFO  com.kms.katalon.core.util.KeywordUtil    - CSV report generated
+2019-07-23 12:29:54.707 INFO  com.kms.katalon.core.util.KeywordUtil    - Start generating JUnit report folder at: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190723_122644...
+2019-07-23 12:29:55.306 INFO  com.kms.katalon.core.util.KeywordUtil    - JUnit report generated
+2019-07-23 12:29:55.417 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2019-07-23 12:29:55.425 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/test_init
+2019-07-23 12:29:55.431 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
+Launcher status after execution process completed: Running
+Start writing execution.uuid file to folder: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190723_122644
+Copying report to folder /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init...
+Uploading report to Katalon Analytics...
+Start sending test result to Katalon Analytics
+Uploading log files in folder path: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190723_122644
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190723_122644/execution.uuid
+KA: Start uploading report to KA server: https://analytics.katalon.com
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190723_122644/execution0.log
+KA: Start uploading report to KA server: https://analytics.katalon.com
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190723_122644/execution.properties
+KA: Start uploading report to KA server: https://analytics.katalon.com
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190723_122644/JUnit_Report.xml
+KA: Start uploading report to KA server: https://analytics.katalon.com
+Katalon Analytics - Execution URL: https://analytics.katalon.com/team/21720/project/27883/executions/270
+End sending to Katalon Analytics
+Report has been sent to Katalon Analytics
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190723_122644.......................3/3(100%)
+--------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190723_122644.......................3/3(100%)
+--------------------------------------------------------------------------------
+
+Archiving artifacts
+[htmlpublisher] Archiving HTML reports...
+[htmlpublisher] Archiving at BUILD level /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init to /var/jenkins_home/jobs/test_auto_chrome/builds/38/htmlreports/Rapport_HTML_chrome
+Sending e-mails to: bart_the_wacky@hotmail.com
+Checking for post-build
+Performing post-build step
+Checking if email needs to be generated
+Email was triggered for: Success
+Sending email for trigger: Success
+messageContentType = text/html; charset=UTF-8
+Request made to attach build log
+Emergency reroute turned on
+Analyzing: bart.the.wacky@gmail.com
+Looking for: bart.the.wacky@gmail.com
+	starting at: 0
+	firstFoundIdx: 0
+	firstFoundIdx-substring: bart.the.wacky@gmail.com
+	=> found type: 0
+Analyzing: bart.the.wacky@gmail.com
+Looking for: bart.the.wacky@gmail.com
+	starting at: 0
+	firstFoundIdx: 0
+	firstFoundIdx-substring: bart.the.wacky@gmail.com
+	=> found type: 0
+Analyzing: bart.the.wacky@gmail.com
+Looking for: bart.the.wacky@gmail.com
+	starting at: 0
+	firstFoundIdx: 0
+	firstFoundIdx-substring: bart.the.wacky@gmail.com
+	=> found type: 0
+Emergency reroute is set to: bart.the.wacky@gmail.com
+Analyzing: bart.the.wacky@gmail.com
+Looking for: bart.the.wacky@gmail.com
+	starting at: 0
+	firstFoundIdx: 0
+	firstFoundIdx-substring: bart.the.wacky@gmail.com
+	=> found type: 0
+Analyzing: bart.the.wacky@gmail.com
+Looking for: bart.the.wacky@gmail.com
+	starting at: 0
+	firstFoundIdx: 0
+	firstFoundIdx-substring: bart.the.wacky@gmail.com
+	=> found type: 0
+Setting In-Reply-To since last build was not successful
+Successfully created MimeMessage
+Sending email to: bart.the.wacky@gmail.com
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+Triggering a new build of [8mha:////4O9wtgKjWT698pd8xOtshGOsrG8xnI+35Dfa4oed9mY7AAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZx/az8JP2S1OKS+MTSkvz4tMyi1LT8Cn0A9RuDvcwAAAA=[0mtest_auto_katalon
+Finished: SUCCESS

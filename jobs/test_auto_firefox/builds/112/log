@@ -1,0 +1,348 @@
+Started by user [8mha:////4AUDbHayNnIXFVFxdM0fFa7o2lPCAEQ0MdulVlSFXDq+AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4FlwIsXMjDD2adClQOI3w7yjcL9NaOOqVSZqR8SUffqBAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/cT01LyS+LzU0pKiVAAl/91EywAAAA==[0magent_neutre (linux squashtf docker) in workspace /var/jenkins_home/workspace/test_job/test_auto
+using credential GitHub
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.test_auto.url https://github.com/bart-the-wacky/test_auto.git # timeout=10
+Fetching upstream changes from https://github.com/bart-the-wacky/test_auto.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials credentials pour Github
+ > git fetch --tags --progress https://github.com/bart-the-wacky/test_auto.git +refs/heads/*:refs/remotes/test_auto/*
+ > git rev-parse refs/remotes/test_auto/test_auto^{commit} # timeout=10
+ > git rev-parse refs/remotes/test_auto/test_auto/test_auto^{commit} # timeout=10
+Checking out Revision 6b7e8456e12a74a734c04b6cd646ca280dd93096 (refs/remotes/test_auto/test_auto)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6b7e8456e12a74a734c04b6cd646ca280dd93096
+Commit message: "nettoyage du reporting"
+ > git rev-list --no-walk 6b7e8456e12a74a734c04b6cd646ca280dd93096 # timeout=10
+Extended Email Publisher is currently disabled in project settings
+Katalon Studio package has been downloaded already.
+Using Katalon Studio at /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1
+Making driver executables...
+Drivers folder at: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/drivers
+Set chromedriver as executable !
+Set geckodriver as executable !
+Execute [sh, -c, xvfb-run -a -n 0 -s "-screen 0 1024x768x24" /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/katalon -noSplash  -runMode=console  -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/test_init" -projectPath="/var/jenkins_home/workspace/test_job/test_auto" --config -webui.autoUpdateDrivers=true --no-sandbox -reportFolder="/var/jenkins_home/workspace/test_job/test_auto/Reports/chrome" -reportFileName="$BUILD_TAG_chrome" -apiKey=4d90b6b4-8dcd-4242-968b-06128a89eaa2 
+ ] in /tmp/katalon-6335654943001787019
+Katalon workspace folder is set to default location: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/config
+Starting Groovy-Eclipse compiler resolver.  Specified compiler level: unspecified
+170 2.4.7.xx-201611170128-e46 = ACTIVE
+
+
+INFO: Katalon Version: 6.2.1
+INFO: Command-line arguments: -runMode=console -browserType=Chrome -retry=0 -statusDelay=15 -testSuitePath=Test Suites/test_init -projectPath=/var/jenkins_home/workspace/test_job/test_auto --config -webui.autoUpdateDrivers=true --no-sandbox -reportFolder=/var/jenkins_home/workspace/test_job/test_auto/Reports/chrome -reportFileName= -apiKey=******
+INFO: User working dir: /tmp/katalon-6335654943001787019
+INFO: User home: /home/jenkins
+INFO: Java vendor: Oracle Corporation
+INFO: Java version: 1.8.0_212
+INFO: Local OS: Linux 64bit
+INFO: CPU load: 93%
+INFO: Total memory: 3948 MB
+INFO: Free memory: 1647 MB
+
+
+Project path is a folder.
+Examine folder 'Plugins'.
+Examine file 'test_auto.prj'.
+Found project file '/var/jenkins_home/workspace/test_job/test_auto/test_auto.prj'.
+Examine file '.project'.
+Examine folder 'Reports'.
+Examine folder 'Scripts'.
+Examine folder '.git'.
+Examine folder 'Test Cases'.
+Examine folder 'Object Repository'.
+Examine folder 'Libs'.
+Examine folder 'Test Listeners'.
+Examine folder 'Test Suites'.
+Examine folder 'Keywords'.
+Examine folder 'Data Files'.
+Examine folder '.settings'.
+Examine folder 'bin'.
+Examine file 'README.md'.
+Examine folder 'Profiles'.
+Examine folder 'Include'.
+Examine folder 'settings'.
+Examine file 'console.properties'.
+Examine folder 'Checkpoints'.
+Examine file '.classpath'.
+Examine folder 'Drivers'.
+Delete folder: bin
+Delete folder: Libs
+Opening project file: /var/jenkins_home/workspace/test_job/test_auto/test_auto.prj
+Parsing custom keywords in Plugins folder...
+Generating global variables...
+Parsing custom keywords...
+Project 'test_auto' opened
+[INFO] Using WebDriverManager to resolve chrome
+[DEBUG] Driver for chrome75 not found in local properties
+[INFO] Using chromedriver 75.0.3770.140 (since Google Chrome 75 is installed in your machine)
+[INFO] Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+[INFO] Downloading https://chromedriver.storage.googleapis.com/75.0.3770.140/chromedriver_linux64.zip
+[INFO] Extracting binary from compressed file chromedriver_linux64.zip
+[INFO] Overriding former binary /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/temp/webdriver/chromedriver
+[INFO] Resulting binary /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/temp/webdriver/chromedriver
+Chrome driver is located at: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/temp/webdriver/chromedriver
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190719_093622.........................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 09:36:35.837 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/test_init
+2019-07-19 09:36:36.026 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = jenkins - 34de5c8c19e3
+2019-07-19 09:36:36.046 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Linux 64bit
+2019-07-19 09:36:36.057 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 172.17.0.4
+2019-07-19 09:36:36.064 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 6.2.1.2
+2019-07-19 09:36:37.116 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2019-07-19 09:36:37.122 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/test_case_chrome
+Start recording video for test case 'Test Cases/test_case_chrome'.
+2019-07-19 09:36:39.705 DEBUG testcase.test_case_chrome                - 1: openBrowser("https://www.google.fr/")
+2019-07-19 09:36:40.924 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+Jul 19, 2019 9:36:40 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+2019-07-19 09:36:41.071 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 seconds
+[1563529002.778][SEVERE]: bind() failed: Cannot assign requested address (99)
+Starting ChromeDriver 75.0.3770.140 (2d9f97485c7b07dc18a74666574f19176731995c-refs/branch-heads/3770@{#1155}) on port 1607
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190719_093622.........................0/1(0%)
+--------------------------------------------------------------------------------
+
+Jul 19, 2019 9:36:49 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2019-07-19 09:36:49.667 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 2ac248a5b8810a99218cbc4b74a289a1
+2019-07-19 09:36:49.810 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 75.0.3770.142
+2019-07-19 09:36:49.829 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Linux
+2019-07-19 09:36:49.839 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 3.141.59
+2019-07-19 09:36:49.867 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}
+2019-07-19 09:36:53.436 DEBUG testcase.test_case_chrome                - 2: setText(findTestObject("Object Repository/Page_Google/input_Connexion_q"), "docker hub")
+2019-07-19 09:36:55.073 DEBUG testcase.test_case_chrome                - 3: click(findTestObject("Page_Google/bouton_recherche"))
+2019-07-19 09:36:58.352 DEBUG testcase.test_case_chrome                - 4: click(findTestObject("Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub"))
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190719_093622.........................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 09:37:08.400 DEBUG testcase.test_case_chrome                - 5: takeScreenshot("Reports/screenshots/chrome_checkpoint1.png")
+2019-07-19 09:37:09.425 DEBUG testcase.test_case_chrome                - 6: click(findTestObject("Object Repository/Page_Docker Hub/div_Sign In"))
+2019-07-19 09:37:11.884 DEBUG testcase.test_case_chrome                - 7: takeScreenshot("Reports/screenshots/chrome_checkpoint2.png")
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190719_093622.........................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 09:37:14.106 DEBUG testcase.test_case_chrome                - 8: setText(findTestObject("Object Repository/Page_Log in to Docker/input_Docker ID_nw_username"), "bart_the_wacky@hotmail.com")
+2019-07-19 09:37:15.341 DEBUG testcase.test_case_chrome                - 9: setEncryptedText(findTestObject("Object Repository/Page_Log in to Docker/input_Password_nw_password"), "mvMLieaRys7gdrS5YCR2pQ==")
+2019-07-19 09:37:16.295 DEBUG testcase.test_case_chrome                - 10: click(findTestObject("Object Repository/Page_Log in to Docker/button_Sign In"))
+2019-07-19 09:37:16.710 DEBUG testcase.test_case_chrome                - 11: takeScreenshot("Reports/screenshots/chrome_checkpoint3.png")
+2019-07-19 09:37:25.912 DEBUG testcase.test_case_chrome                - 12: click(findTestObject("Object Repository/Page_Docker Hub/span_squashtf_test"))
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190719_093622.........................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 09:37:35.548 DEBUG testcase.test_case_chrome                - 13: takeScreenshot("Reports/screenshots/chrome_checkpoint4.png")
+2019-07-19 09:37:37.269 DEBUG testcase.test_case_chrome                - 14: closeBrowser()
+Video recording for test case 'Test Cases/test_case_chrome' .
+2019-07-19 09:37:40.026 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/test_case_chrome
+2019-07-19 09:37:40.296 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2019-07-19 09:37:40.306 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/test_init
+2019-07-19 09:37:40.310 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
+Launcher status after execution process completed: Running
+Start writing execution.uuid file to folder: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190719_093622
+Copying report to folder /var/jenkins_home/workspace/test_job/test_auto/Reports/chrome...
+Uploading report to Katalon Analytics...
+Start sending test result to Katalon Analytics
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190719_093622.......................1/1(100%)
+--------------------------------------------------------------------------------
+
+Uploading log files in folder path: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190719_093622
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190719_093622/execution.uuid
+KA: Start uploading report to KA server: https://analytics.katalon.com
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190719_093622/execution0.log
+KA: Start uploading report to KA server: https://analytics.katalon.com
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190719_093622/execution.properties
+KA: Start uploading report to KA server: https://analytics.katalon.com
+Katalon Analytics - Execution URL: https://analytics.katalon.com/team/21720/project/27883/executions/160
+End sending to Katalon Analytics
+Report has been sent to Katalon Analytics
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190719_093622.......................1/1(100%)
+--------------------------------------------------------------------------------
+
+Katalon Studio package has been downloaded already.
+Using Katalon Studio at /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1
+Making driver executables...
+Drivers folder at: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/drivers
+Set chromedriver as executable !
+Set geckodriver as executable !
+Execute [sh, -c, xvfb-run -a -n 0 -s "-screen 0 1024x768x24" /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/katalon -noSplash  -runMode=console  -browserType="Firefox" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/test_firefox" -projectPath="/var/jenkins_home/workspace/test_job/test_auto" --config -webui.autoUpdateDrivers=true --no-sandbox -reportFolder="/var/jenkins_home/workspace/test_job/test_auto/Reports/firefox" -reportFileName="$BUILD_TAG_firefox" -apiKey=4d90b6b4-8dcd-4242-968b-06128a89eaa2
+ ] in /tmp/katalon-8791471454378402937
+Katalon workspace folder is set to default location: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/config
+Starting Groovy-Eclipse compiler resolver.  Specified compiler level: unspecified
+170 2.4.7.xx-201611170128-e46 = ACTIVE
+
+
+INFO: Katalon Version: 6.2.1
+INFO: Command-line arguments: -runMode=console -browserType=Firefox -retry=0 -statusDelay=15 -testSuitePath=Test Suites/test_firefox -projectPath=/var/jenkins_home/workspace/test_job/test_auto --config -webui.autoUpdateDrivers=true --no-sandbox -reportFolder=/var/jenkins_home/workspace/test_job/test_auto/Reports/firefox -reportFileName= -apiKey=******
+INFO: User working dir: /tmp/katalon-8791471454378402937
+INFO: User home: /home/jenkins
+INFO: Java vendor: Oracle Corporation
+INFO: Java version: 1.8.0_212
+INFO: Local OS: Linux 64bit
+INFO: CPU load: 88%
+INFO: Total memory: 3948 MB
+INFO: Free memory: 1640 MB
+
+
+Project path is a folder.
+Examine folder 'Plugins'.
+Examine file 'test_auto.prj'.
+Found project file '/var/jenkins_home/workspace/test_job/test_auto/test_auto.prj'.
+Examine file '.project'.
+Examine folder 'Reports'.
+Examine folder 'Scripts'.
+Examine folder '.git'.
+Examine folder 'Test Cases'.
+Examine folder 'Object Repository'.
+Examine folder 'Libs'.
+Examine folder 'Test Listeners'.
+Examine folder 'Test Suites'.
+Examine folder 'Keywords'.
+Examine folder 'Data Files'.
+Examine folder '.settings'.
+Examine folder 'bin'.
+Examine file 'README.md'.
+Examine folder 'Profiles'.
+Examine folder 'Include'.
+Examine folder 'settings'.
+Examine file 'console.properties'.
+Examine folder 'Checkpoints'.
+Examine file '.classpath'.
+Examine folder 'Drivers'.
+Delete folder: bin
+Delete folder: Libs
+Opening project file: /var/jenkins_home/workspace/test_job/test_auto/test_auto.prj
+Parsing custom keywords in Plugins folder...
+Generating global variables...
+Parsing custom keywords...
+Project 'test_auto' opened
+[INFO] Using WebDriverManager to resolve firefox
+[INFO] Using geckodriver 0.21.0 (since Mozilla Firefox 60 is installed in your machine)
+[INFO] Reading https://api.github.com/repos/mozilla/geckodriver/releases to seek geckodriver
+[INFO] Downloading https://github.com/mozilla/geckodriver/releases/download/v0.21.0/geckodriver-v0.21.0-linux64.tar.gz
+[INFO] Extracting binary from compressed file geckodriver-vlinux64v0.21.0-linux64.tar.gz
+[INFO] Overriding former binary /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/temp/webdriver/geckodriver
+[INFO] Resulting binary /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/temp/webdriver/geckodriver
+gecko driver is located at: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/temp/webdriver/geckodriver
+
+--------------------------------------------------------------------------------
+Test Suites/test_firefox - Firefox - 20190719_093841.....................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 09:38:51.848 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/test_firefox
+2019-07-19 09:38:51.998 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = jenkins - 34de5c8c19e3
+2019-07-19 09:38:52.021 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Linux 64bit
+2019-07-19 09:38:52.027 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 172.17.0.4
+2019-07-19 09:38:52.041 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 6.2.1.2
+2019-07-19 09:38:53.152 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2019-07-19 09:38:53.155 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/test_case_firefox
+Start recording video for test case 'Test Cases/test_case_firefox'.
+2019-07-19 09:38:55.991 DEBUG testcase.test_case_firefox               - 1: openBrowser("https://www.google.fr/")
+2019-07-19 09:38:57.176 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox' driver
+Jul 19, 2019 9:38:57 AM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+2019-07-19 09:38:57.770 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 seconds
+1563529139799	geckodriver	INFO	geckodriver 0.21.0
+1563529139852	geckodriver	INFO	Listening on 127.0.0.1:21549
+
+--------------------------------------------------------------------------------
+Test Suites/test_firefox - Firefox - 20190719_093841.....................0/1(0%)
+--------------------------------------------------------------------------------
+
+1563529141472	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.umX7z1uKMdBJ"
+1563529152779	Marionette	INFO	Listening on port 44853
+1563529152893	Marionette	WARN	TLS certificate errors will be ignored for this session
+1563529152942	Marionette	INFO	Proxy settings initialised: {"proxyType":"direct"}
+Jul 19, 2019 9:39:13 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2019-07-19 09:39:13.625 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = b7922835-108c-4c6a-8974-6b40aa34c6eb
+2019-07-19 09:39:13.720 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 60.0
+2019-07-19 09:39:13.726 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Linux
+2019-07-19 09:39:13.740 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 3.141.59
+2019-07-19 09:39:13.765 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}
+
+--------------------------------------------------------------------------------
+Test Suites/test_firefox - Firefox - 20190719_093841.....................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 09:39:17.843 DEBUG testcase.test_case_firefox               - 2: setText(findTestObject("Object Repository/Page_Google/input_Connexion_q"), "docker hub")
+2019-07-19 09:39:19.405 DEBUG testcase.test_case_firefox               - 3: click(findTestObject("Page_Google/bouton_recherche"))
+2019-07-19 09:39:24.337 DEBUG testcase.test_case_firefox               - 4: click(findTestObject("Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub"))
+
+--------------------------------------------------------------------------------
+Test Suites/test_firefox - Firefox - 20190719_093841.....................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 09:39:37.505 DEBUG testcase.test_case_firefox               - 5: takeScreenshot("Reports/screenshots/firefox_checkpoint1.png")
+2019-07-19 09:39:38.594 DEBUG testcase.test_case_firefox               - 6: click(findTestObject("Object Repository/Page_Docker Hub/div_Sign In"))
+2019-07-19 09:39:41.969 DEBUG testcase.test_case_firefox               - 7: takeScreenshot("Reports/screenshots/firefox_checkpoint2.png")
+2019-07-19 09:39:42.519 DEBUG testcase.test_case_firefox               - 8: setText(findTestObject("Object Repository/Page_Log in to Docker/input_Docker ID_nw_username"), "bart_the_wacky@hotmail.com")
+2019-07-19 09:39:43.775 DEBUG testcase.test_case_firefox               - 9: setEncryptedText(findTestObject("Object Repository/Page_Log in to Docker/input_Password_nw_password"), "mvMLieaRys7gdrS5YCR2pQ==")
+2019-07-19 09:39:44.578 DEBUG testcase.test_case_firefox               - 10: click(findTestObject("Object Repository/Page_Log in to Docker/button_Sign In"))
+
+--------------------------------------------------------------------------------
+Test Suites/test_firefox - Firefox - 20190719_093841.....................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 09:40:00.899 DEBUG testcase.test_case_firefox               - 11: takeScreenshot("Reports/screenshots/firefox_checkpoint3.png")
+2019-07-19 09:40:01.334 DEBUG testcase.test_case_firefox               - 12: click(findTestObject("Object Repository/Page_Docker Hub/span_squashtf_test"))
+
+--------------------------------------------------------------------------------
+Test Suites/test_firefox - Firefox - 20190719_093841.....................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 09:40:11.681 DEBUG testcase.test_case_firefox               - 13: takeScreenshot("Reports/screenshots/firefox_checkpoint4.png")
+2019-07-19 09:40:12.096 DEBUG testcase.test_case_firefox               - 14: closeBrowser()
+console.log: Accessibility service init or shutdown observer does not exist.
+
+--------------------------------------------------------------------------------
+Test Suites/test_firefox - Firefox - 20190719_093841.....................0/1(0%)
+--------------------------------------------------------------------------------
+
+Video recording for test case 'Test Cases/test_case_firefox' .
+2019-07-19 09:40:17.816 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/test_case_firefox
+2019-07-19 09:40:18.017 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2019-07-19 09:40:18.020 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/test_firefox
+2019-07-19 09:40:18.020 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
+Launcher status after execution process completed: Running
+Start writing execution.uuid file to folder: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_firefox/20190719_093841
+Copying report to folder /var/jenkins_home/workspace/test_job/test_auto/Reports/firefox...
+Uploading report to Katalon Analytics...
+Start sending test result to Katalon Analytics
+Uploading log files in folder path: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_firefox/20190719_093841
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_firefox/20190719_093841/execution.uuid
+KA: Start uploading report to KA server: https://analytics.katalon.com
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_firefox/20190719_093841/execution0.log
+KA: Start uploading report to KA server: https://analytics.katalon.com
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_firefox/20190719_093841/execution.properties
+KA: Start uploading report to KA server: https://analytics.katalon.com
+Katalon Analytics - Execution URL: https://analytics.katalon.com/team/21720/project/27883/executions/161
+End sending to Katalon Analytics
+Report has been sent to Katalon Analytics
+
+--------------------------------------------------------------------------------
+Test Suites/test_firefox - Firefox - 20190719_093841...................1/1(100%)
+--------------------------------------------------------------------------------
+
+Archiving artifacts
+[htmlpublisher] Archiving HTML reports...
+[htmlpublisher] Archiving at BUILD level /Reports/firefox/$BUILD_TAG_firefox.html to /var/jenkins_home/jobs/test_job/builds/112/htmlreports/Rapport_20HTML_20pour_20firefox
+[htmlpublisher] Archiving at BUILD level /Reports/chrome/$BUILD_TAG_chrome.html to /var/jenkins_home/jobs/test_job/builds/112/htmlreports/Rapport_20HTML_20pour_20chrome
+Extended Email Publisher is currently disabled in project settings
+Finished: SUCCESS

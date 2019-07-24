@@ -1,0 +1,16 @@
+1
+00:00:08,437 --> 00:00:08,542
+1. openBrowser("https://www.google.fr/")
+
+2
+00:01:44,724 --> 00:01:44,808
+5. setText(findTestObject("Object Repository/Page_Google/input_Connexion_q"), "docker hub")
+
+3
+00:01:49,243 --> 00:01:49,282
+9. click(findTestObject("Page_Google/bouton_recherche"))
+
+4
+00:02:09,015 --> 00:02:09,070
+13. click(findTestObject("Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub"))
+

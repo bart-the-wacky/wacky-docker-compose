@@ -1,0 +1,56 @@
+1
+00:00:01,775 --> 00:00:01,795
+1. openBrowser("https://www.google.fr/")
+
+2
+00:00:23,777 --> 00:00:23,812
+5. setText(findTestObject("Object Repository/Page_Google/input_Connexion_q"), "docker hub")
+
+3
+00:00:24,979 --> 00:00:25,005
+9. click(findTestObject("Page_Google/bouton_recherche"))
+
+4
+00:00:29,480 --> 00:00:29,505
+13. click(findTestObject("Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub"))
+
+5
+00:00:46,984 --> 00:00:47,013
+17. takeScreenshot("Reports/screenshots/firefox_checkpoint1.png")
+
+6
+00:00:47,683 --> 00:00:47,691
+21. click(findTestObject("Object Repository/Page_Docker Hub/div_Sign In"))
+
+7
+00:00:50,434 --> 00:00:50,442
+25. takeScreenshot("Reports/screenshots/firefox_checkpoint2.png")
+
+8
+00:00:50,798 --> 00:00:50,817
+29. setText(findTestObject("Object Repository/Page_Log in to Docker/input_Docker ID_nw_username"), "bart_the_wacky@hotmail.com")
+
+9
+00:00:52,193 --> 00:00:52,208
+33. setEncryptedText(findTestObject("Object Repository/Page_Log in to Docker/input_Password_nw_password"), "mvMLieaRys7gdrS5YCR2pQ==")
+
+10
+00:00:53,024 --> 00:00:53,042
+37. click(findTestObject("Object Repository/Page_Log in to Docker/button_Sign In"))
+
+11
+00:01:10,274 --> 00:01:10,286
+41. takeScreenshot("Reports/screenshots/firefox_checkpoint3.png")
+
+12
+00:01:10,791 --> 00:01:10,800
+45. click(findTestObject("Object Repository/Page_Docker Hub/span_squashtf_test"))
+
+13
+00:01:20,937 --> 00:01:20,951
+49. takeScreenshot("Reports/screenshots/firefox_checkpoint4.png")
+
+14
+00:01:21,324 --> 00:01:21,337
+53. closeBrowser()
+

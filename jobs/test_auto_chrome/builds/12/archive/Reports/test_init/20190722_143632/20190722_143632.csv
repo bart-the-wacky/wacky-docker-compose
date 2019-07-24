@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+test_init,Chrome 75.0.3770.142,suite de test initiale afin de tester la connection au jenkins docker,,2019-07-22 14:36:44,2019-07-22 14:37:51,1m - 6.602s,INCOMPLETE
+,,,,,,,
+Test Cases/test_case_chrome,Chrome 75.0.3770.142,test case initial de test du navigateur firefox,firefox,2019-07-22 14:36:45,2019-07-22 14:37:51,1m - 5.473s,PASSED
+"openBrowser(""https://www.google.fr/"")",Chrome 75.0.3770.142,,,2019-07-22 14:36:48,2019-07-22 14:37:00,12.160s,PASSED
+"setText(findTestObject(""Object Repository/Page_Google/input_Connexion_q""), ""docker hub"")",Chrome 75.0.3770.142,,,2019-07-22 14:37:00,2019-07-22 14:37:02,2.287s,PASSED
+"click(findTestObject(""Page_Google/bouton_recherche""))",Chrome 75.0.3770.142,,,2019-07-22 14:37:02,2019-07-22 14:37:05,2.976s,PASSED
+"click(findTestObject(""Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub""))",Chrome 75.0.3770.142,,,2019-07-22 14:37:05,2019-07-22 14:37:17,12.116s,PASSED
+"takeScreenshot(""Reports/screenshots/chrome_checkpoint1.png"")",Chrome 75.0.3770.142,,,2019-07-22 14:37:17,2019-07-22 14:37:19,1.307s,PASSED
+"click(findTestObject(""Object Repository/Page_Docker Hub/div_Sign In""))",Chrome 75.0.3770.142,,,2019-07-22 14:37:19,2019-07-22 14:37:21,2.603s,PASSED
+"takeScreenshot(""Reports/screenshots/chrome_checkpoint2.png"")",Chrome 75.0.3770.142,,,2019-07-22 14:37:21,2019-07-22 14:37:24,2.690s,PASSED
+"setText(findTestObject(""Object Repository/Page_Log in to Docker/input_Docker ID_nw_username""), ""bart_the_wacky@hotmail.com"")",Chrome 75.0.3770.142,,,2019-07-22 14:37:24,2019-07-22 14:37:25,1.414s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Log in to Docker/input_Password_nw_password""), ""mvMLieaRys7gdrS5YCR2pQ=="")",Chrome 75.0.3770.142,,,2019-07-22 14:37:25,2019-07-22 14:37:26,1.011s,PASSED
+"click(findTestObject(""Object Repository/Page_Log in to Docker/button_Sign In""))",Chrome 75.0.3770.142,,,2019-07-22 14:37:26,2019-07-22 14:37:27,0.611s,PASSED
+"takeScreenshot(""Reports/screenshots/chrome_checkpoint3.png"")",Chrome 75.0.3770.142,,,2019-07-22 14:37:27,2019-07-22 14:37:38,10.611s,PASSED
+"click(findTestObject(""Object Repository/Page_Docker Hub/span_squashtf_test""))",Chrome 75.0.3770.142,,,2019-07-22 14:37:38,2019-07-22 14:37:46,8.539s,PASSED
+"takeScreenshot(""Reports/screenshots/chrome_checkpoint4.png"")",Chrome 75.0.3770.142,,,2019-07-22 14:37:46,2019-07-22 14:37:48,1.648s,PASSED
+closeBrowser(),Chrome 75.0.3770.142,,,2019-07-22 14:37:48,2019-07-22 14:37:49,0.755s,PASSED

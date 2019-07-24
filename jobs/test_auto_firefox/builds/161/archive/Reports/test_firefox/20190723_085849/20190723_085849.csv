@@ -1,0 +1,22 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+test_firefox,Firefox 60.0,,,2019-07-23 08:59:00,2019-07-23 09:00:32,1m - 32.179s,INCOMPLETE
+,,,,,,,
+Test Cases/test_case_firefox,Firefox 60.0,test case initial de test du navigateur firefox,firefox,2019-07-23 08:59:01,2019-07-23 09:00:32,1m - 31.069s,PASSED
+"openBrowser(""https://www.google.fr/"")",Firefox 60.0,,,2019-07-23 08:59:04,2019-07-23 08:59:28,24.033s,PASSED
+"setText(findTestObject(""Object Repository/Page_Google/input_Connexion_q""), ""docker hub"")",Firefox 60.0,,,2019-07-23 08:59:28,2019-07-23 08:59:29,1.260s,PASSED
+"click(findTestObject(""Page_Google/bouton_recherche""))",Firefox 60.0,,,2019-07-23 08:59:29,2019-07-23 08:59:34,4.332s,PASSED
+"click(findTestObject(""Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub""))",Firefox 60.0,,,2019-07-23 08:59:34,2019-07-23 08:59:47,13.361s,PASSED
+waitForPageLoad(3),Firefox 60.0,,,2019-07-23 08:59:47,2019-07-23 08:59:48,1.316s,PASSED
+"takeScreenshot(""Reports/screenshots/chrome_checkpoint1.png"")",Firefox 60.0,,,2019-07-23 08:59:48,2019-07-23 08:59:50,1.596s,PASSED
+"click(findTestObject(""Object Repository/Page_Docker Hub/div_Sign In""))",Firefox 60.0,,,2019-07-23 08:59:50,2019-07-23 08:59:53,3.513s,PASSED
+waitForPageLoad(3),Firefox 60.0,,,2019-07-23 08:59:53,2019-07-23 08:59:54,0.126s,PASSED
+"takeScreenshot(""Reports/screenshots/chrome_checkpoint2.png"")",Firefox 60.0,,,2019-07-23 08:59:54,2019-07-23 08:59:54,0.536s,PASSED
+"setText(findTestObject(""Object Repository/Page_Log in to Docker/input_Docker ID_nw_username""), ""bart_the_wacky@hotmail.com"")",Firefox 60.0,,,2019-07-23 08:59:54,2019-07-23 08:59:56,1.877s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Log in to Docker/input_Password_nw_password""), ""mvMLieaRys7gdrS5YCR2pQ=="")",Firefox 60.0,,,2019-07-23 08:59:56,2019-07-23 08:59:57,0.866s,PASSED
+"click(findTestObject(""Object Repository/Page_Log in to Docker/button_Sign In""))",Firefox 60.0,,,2019-07-23 08:59:57,2019-07-23 09:00:14,16.764s,PASSED
+waitForPageLoad(3),Firefox 60.0,,,2019-07-23 09:00:14,2019-07-23 09:00:14,0.099s,PASSED
+"takeScreenshot(""Reports/screenshots/chrome_checkpoint3.png"")",Firefox 60.0,,,2019-07-23 09:00:14,2019-07-23 09:00:14,0.361s,PASSED
+"click(findTestObject(""Object Repository/Page_Docker Hub/span_squashtf_test""))",Firefox 60.0,,,2019-07-23 09:00:14,2019-07-23 09:00:27,12.854s,PASSED
+waitForPageLoad(5),Firefox 60.0,,,2019-07-23 09:00:27,2019-07-23 09:00:27,0.198s,PASSED
+"takeScreenshot(""Reports/screenshots/chrome_checkpoint4.png"")",Firefox 60.0,,,2019-07-23 09:00:27,2019-07-23 09:00:28,0.441s,PASSED
+closeBrowser(),Firefox 60.0,,,2019-07-23 09:00:28,2019-07-23 09:00:30,2.696s,PASSED

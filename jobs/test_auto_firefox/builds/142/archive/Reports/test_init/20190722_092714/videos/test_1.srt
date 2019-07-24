@@ -1,0 +1,24 @@
+1
+00:00:06,068 --> 00:00:06,162
+1. openBrowser("https://www.google.fr/")
+
+2
+00:00:54,121 --> 00:00:54,206
+5. setText(findTestObject("Object Repository/Page_Google/input_Connexion_q"), "docker hub")
+
+3
+00:00:59,326 --> 00:00:59,385
+9. click(findTestObject("Page_Google/bouton_recherche"))
+
+4
+00:01:10,652 --> 00:01:10,748
+13. click(findTestObject("Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub"))
+
+5
+00:01:35,875 --> 00:01:35,895
+17. takeScreenshot("Reports/screenshots/chrome_checkpoint1.png")
+
+6
+00:01:37,198 --> 00:01:37,210
+21. click(findTestObject("Object Repository/Page_Docker Hub/div_Sign In"))
+

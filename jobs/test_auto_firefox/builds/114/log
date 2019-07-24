@@ -1,0 +1,393 @@
+Started by user [8mha:////4AUDbHayNnIXFVFxdM0fFa7o2lPCAEQ0MdulVlSFXDq+AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4FlwIsXMjDD2adClQOI3w7yjcL9NaOOqVSZqR8SUffqBAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/cT01LyS+LzU0pKiVAAl/91EywAAAA==[0magent_neutre (linux squashtf docker) in workspace /var/jenkins_home/workspace/test_job/test_auto
+using credential GitHub
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.test_auto.url https://github.com/bart-the-wacky/test_auto.git # timeout=10
+Fetching upstream changes from https://github.com/bart-the-wacky/test_auto.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials credentials pour Github
+ > git fetch --tags --progress https://github.com/bart-the-wacky/test_auto.git +refs/heads/*:refs/remotes/test_auto/*
+ > git rev-parse refs/remotes/test_auto/test_auto^{commit} # timeout=10
+ > git rev-parse refs/remotes/test_auto/test_auto/test_auto^{commit} # timeout=10
+Checking out Revision 6b7e8456e12a74a734c04b6cd646ca280dd93096 (refs/remotes/test_auto/test_auto)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6b7e8456e12a74a734c04b6cd646ca280dd93096
+Commit message: "nettoyage du reporting"
+ > git rev-list --no-walk 6b7e8456e12a74a734c04b6cd646ca280dd93096 # timeout=10
+Extended Email Publisher is currently disabled in project settings
+Katalon Studio package has been downloaded already.
+Using Katalon Studio at /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1
+Making driver executables...
+Drivers folder at: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/drivers
+Set chromedriver as executable !
+Set geckodriver as executable !
+Execute [sh, -c, xvfb-run -a -n 0 -s "-screen 0 1024x768x24" /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/katalon -noSplash  -runMode=console  -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/test_init" -projectPath="/var/jenkins_home/workspace/test_job/test_auto" --config -webui.autoUpdateDrivers=true --no-sandbox -apiKey=4d90b6b4-8dcd-4242-968b-06128a89eaa2 -reportFolder="/var/jenkins_home/workspace/test_job/test_auto/Reports/chrome" -reportFileName="chrome"  
+ ] in /tmp/katalon-5721624011358216354
+Katalon workspace folder is set to default location: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/config
+Starting Groovy-Eclipse compiler resolver.  Specified compiler level: unspecified
+170 2.4.7.xx-201611170128-e46 = ACTIVE
+
+
+INFO: Katalon Version: 6.2.1
+INFO: Command-line arguments: -runMode=console -browserType=Chrome -retry=0 -statusDelay=15 -testSuitePath=Test Suites/test_init -projectPath=/var/jenkins_home/workspace/test_job/test_auto --config -webui.autoUpdateDrivers=true --no-sandbox -apiKey=****** -reportFolder=/var/jenkins_home/workspace/test_job/test_auto/Reports/chrome -reportFileName=chrome
+INFO: User working dir: /tmp/katalon-5721624011358216354
+INFO: User home: /home/jenkins
+INFO: Java vendor: Oracle Corporation
+INFO: Java version: 1.8.0_212
+INFO: Local OS: Linux 64bit
+INFO: CPU load: 97%
+INFO: Total memory: 3948 MB
+INFO: Free memory: 1623 MB
+
+
+Start reloading plugins...
+Latest plugins responses: [{"id":16173,"status":1,"expiration_date":null,"created_at":"2019-07-17T12:12:23.509Z","updated_at":"2019-07-17T12:12:23.509Z","active":true,"send_expiration_mail":false,"send_expiration_reminder_mail":false,"user_id":10729,"bundled_plugin_id":null,"product":{"id":59,"plugin_id":null,"name":"Basic Report","description":"Basic Report Plugin is a Custom Keyword that replaces for the current Report feature of Katalon Studio. Since version 6.1.5, the Report feature has been migrated to Basic Report plugin.","logo":"m3j3hddvlvinco5i-BasicReport_140px.png","repository":"https://github.com/katalon-studio/katalon-studio-basic-report-plugin","documentation":"https://github.com/katalon-studio/katalon-studio-report-plugin/blob/master/docs/tutorials/usage.md","reference":null,"license":"","release_date":null,"qa_url":null,"status":1,"created_at":"2019-04-26T09:41:28.208Z","updated_at":"2019-06-20T08:47:11.762Z","overview":"Basic Report Plugin is a Custom Keyword that replaces for the current Report feature of Katalon Studio. Since [version 6.1.5](https://docs.katalon.com/katalon-studio/new/version-615.html), the Report feature has been migrated to Basic Report plugin.  Users need to install this plugin to continue using the feature.\r\n\r\n### Basic Report Plugin provides:\r\n- Generates automatically report from Test Suite report after every test execution with various formats: HTML, CSV, JUnit, and PDF.\r\n- Allows users to export manually Test Suite and Test Suite collection report to HTML, CSV, JUnit, and PDF. Right click on the report and choose Export as.\r\n\r\nFor more details, refer to [Basic Report document](https://docs.katalon.com/katalon-studio/docs/basic-report.html).\r\n","price":null,"stripe_product_id":null,"reject_reason":null,"latest_version_number":null,"product_type_id":2,"marketplace_id":null,"product_versions":[{"id":118,"number":"1.0.2","status":1,"created_at":"2019-05-15T04:35:14.552Z","updated_at":"2019-06-20T08:47:20.952Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""},{"id":99,"number":"1.0.1","status":1,"created_at":"2019-04-26T09:41:28.242Z","updated_at":"2019-06-20T08:47:20.953Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""},{"id":145,"number":"1.0.5","status":1,"created_at":"2019-06-20T08:44:52.820Z","updated_at":"2019-06-20T08:47:20.944Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},{"id":129,"number":"1.0.4","status":1,"created_at":"2019-05-24T09:48:58.985Z","updated_at":"2019-06-20T08:47:20.947Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},{"id":127,"number":"1.0.3","status":1,"created_at":"2019-05-24T02:43:18.285Z","updated_at":"2019-06-20T08:47:20.949Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""}],"product_type":{"id":2,"name":"Custom Keywords Plugin","description":"Custom Keywords Plugin","sequence":1,"created_at":"2019-03-14T08:13:50.036Z","updated_at":"2019-03-14T08:13:50.036Z","view_type":0},"product_categories":[{"id":2,"name":"Utilities","short_name":"","description":"Utilities","order":2,"hide":false,"use_carousel":true,"created_at":"2019-06-13T08:48:28.556Z","updated_at":"2019-06-13T08:48:28.556Z","product_join_category":{"id":22,"created_at":"2019-06-13T08:47:46.501Z","updated_at":"2019-06-13T08:47:46.501Z","product_id":59,"category_id":2}}],"logoUrl":"https://katalon-store.s3.amazonaws.com/m3j3hddvlvinco5i-BasicReport_140px.png","categories":"Utilities","url":"/product/59"},"license_type":{"id":1,"name":"Free","active":true,"day":null,"month":null,"year":null,"created_at":"2019-01-30T01:47:14.080Z","updated_at":"2019-01-30T01:47:14.080Z"},"free":true,"trial":false,"paid":false,"expired":false,"canceled":false,"uninstalled":false,"finalized":false,"compatible_versions":[{"id":118,"number":"1.0.2","status":1,"created_at":"2019-05-15T04:35:14.552Z","updated_at":"2019-06-20T08:47:20.952Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""},{"id":99,"number":"1.0.1","status":1,"created_at":"2019-04-26T09:41:28.242Z","updated_at":"2019-06-20T08:47:20.953Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""},{"id":145,"number":"1.0.5","status":1,"created_at":"2019-06-20T08:44:52.820Z","updated_at":"2019-06-20T08:47:20.944Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},{"id":129,"number":"1.0.4","status":1,"created_at":"2019-05-24T09:48:58.985Z","updated_at":"2019-06-20T08:47:20.947Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},{"id":127,"number":"1.0.3","status":1,"created_at":"2019-05-24T02:43:18.285Z","updated_at":"2019-06-20T08:47:20.949Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""}],"latest_compatible_version":{"id":145,"number":"1.0.5","status":1,"created_at":"2019-06-20T08:44:52.820Z","updated_at":"2019-06-20T08:47:20.944Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},"current_version":{"id":145,"number":"1.0.5","status":1,"created_at":"2019-06-20T08:44:52.820Z","updated_at":"2019-06-20T08:47:20.944Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},"latest_version":{"id":145,"number":"1.0.5","status":1,"created_at":"2019-06-20T08:44:52.820Z","updated_at":"2019-06-20T08:47:20.944Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},"created_date":"July 17th 2019, 12:12 pm"}]
+Katalon version: 6.2.1
+Plugin info URL: https://store.katalon.com/api/products/ks?appVersion=6.2.1
+Plugin info: {
+  "expired": false,
+  "productId": 59,
+  "name": "Basic Report",
+  "id": 16173
+}
+Plugin ID: 16173. Plugin location: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/plugin/install/16173/1.0.5/katalon-studio-report-plugin.jar.
+Plugin "Basic Report" has been installed.
+Project path is a folder.
+Examine folder 'Plugins'.
+Examine file 'test_auto.prj'.
+Found project file '/var/jenkins_home/workspace/test_job/test_auto/test_auto.prj'.
+Examine file '.project'.
+Examine folder 'Reports'.
+Examine folder 'Scripts'.
+Examine folder '.git'.
+Examine folder 'Test Cases'.
+Examine folder 'Object Repository'.
+Examine folder 'Libs'.
+Examine folder 'Test Listeners'.
+Examine folder 'Test Suites'.
+Examine folder 'Keywords'.
+Examine folder 'Data Files'.
+Examine folder '.settings'.
+Examine folder 'bin'.
+Examine file 'README.md'.
+Examine folder 'Profiles'.
+Examine folder 'Include'.
+Examine folder 'settings'.
+Examine file 'console.properties'.
+Examine folder 'Checkpoints'.
+Examine file '.classpath'.
+Examine folder 'Drivers'.
+Delete folder: bin
+Delete folder: Libs
+Opening project file: /var/jenkins_home/workspace/test_job/test_auto/test_auto.prj
+Parsing custom keywords in Plugins folder...
+Generating global variables...
+Parsing custom keywords...
+Project 'test_auto' opened
+[INFO] Using WebDriverManager to resolve chrome
+[DEBUG] Driver for chrome75 not found in local properties
+[INFO] Using chromedriver 75.0.3770.140 (since Google Chrome 75 is installed in your machine)
+[INFO] Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+[INFO] Downloading https://chromedriver.storage.googleapis.com/75.0.3770.140/chromedriver_linux64.zip
+[INFO] Extracting binary from compressed file chromedriver_linux64.zip
+[INFO] Overriding former binary /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/temp/webdriver/chromedriver
+[INFO] Resulting binary /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/temp/webdriver/chromedriver
+Chrome driver is located at: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/temp/webdriver/chromedriver
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190719_095748.........................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 09:58:05.717 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/test_init
+2019-07-19 09:58:05.926 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = jenkins - 34de5c8c19e3
+2019-07-19 09:58:05.933 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Linux 64bit
+2019-07-19 09:58:05.945 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 172.17.0.4
+2019-07-19 09:58:05.949 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 6.2.1.2
+2019-07-19 09:58:07.043 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2019-07-19 09:58:07.046 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/test_case_chrome
+Start recording video for test case 'Test Cases/test_case_chrome'.
+2019-07-19 09:58:09.296 DEBUG testcase.test_case_chrome                - 1: openBrowser("https://www.google.fr/")
+2019-07-19 09:58:10.479 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+Jul 19, 2019 9:58:10 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+2019-07-19 09:58:10.628 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 seconds
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190719_095748.........................0/1(0%)
+--------------------------------------------------------------------------------
+
+Starting ChromeDriver 75.0.3770.140 (2d9f97485c7b07dc18a74666574f19176731995c-refs/branch-heads/3770@{#1155}) on port 14365
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1563530292.522][SEVERE]: bind() failed: Cannot assign requested address (99)
+Jul 19, 2019 9:58:18 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2019-07-19 09:58:18.947 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 1063519a64465fd647c8612d089dbf65
+2019-07-19 09:58:19.067 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 75.0.3770.142
+2019-07-19 09:58:19.075 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Linux
+2019-07-19 09:58:19.084 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 3.141.59
+2019-07-19 09:58:19.103 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}
+2019-07-19 09:58:22.499 DEBUG testcase.test_case_chrome                - 2: setText(findTestObject("Object Repository/Page_Google/input_Connexion_q"), "docker hub")
+2019-07-19 09:58:24.149 DEBUG testcase.test_case_chrome                - 3: click(findTestObject("Page_Google/bouton_recherche"))
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190719_095748.........................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 09:58:27.425 DEBUG testcase.test_case_chrome                - 4: click(findTestObject("Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub"))
+2019-07-19 09:58:37.149 DEBUG testcase.test_case_chrome                - 5: takeScreenshot("Reports/screenshots/chrome_checkpoint1.png")
+2019-07-19 09:58:38.150 DEBUG testcase.test_case_chrome                - 6: click(findTestObject("Object Repository/Page_Docker Hub/div_Sign In"))
+2019-07-19 09:58:40.456 DEBUG testcase.test_case_chrome                - 7: takeScreenshot("Reports/screenshots/chrome_checkpoint2.png")
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190719_095748.........................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 09:58:42.286 DEBUG testcase.test_case_chrome                - 8: setText(findTestObject("Object Repository/Page_Log in to Docker/input_Docker ID_nw_username"), "bart_the_wacky@hotmail.com")
+2019-07-19 09:58:43.713 DEBUG testcase.test_case_chrome                - 9: setEncryptedText(findTestObject("Object Repository/Page_Log in to Docker/input_Password_nw_password"), "mvMLieaRys7gdrS5YCR2pQ==")
+2019-07-19 09:58:44.609 DEBUG testcase.test_case_chrome                - 10: click(findTestObject("Object Repository/Page_Log in to Docker/button_Sign In"))
+2019-07-19 09:58:45.093 DEBUG testcase.test_case_chrome                - 11: takeScreenshot("Reports/screenshots/chrome_checkpoint3.png")
+2019-07-19 09:58:53.143 DEBUG testcase.test_case_chrome                - 12: click(findTestObject("Object Repository/Page_Docker Hub/span_squashtf_test"))
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190719_095748.........................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 09:59:00.086 DEBUG testcase.test_case_chrome                - 13: takeScreenshot("Reports/screenshots/chrome_checkpoint4.png")
+2019-07-19 09:59:01.222 DEBUG testcase.test_case_chrome                - 14: closeBrowser()
+Video recording for test case 'Test Cases/test_case_chrome' .
+2019-07-19 09:59:04.465 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/test_case_chrome
+2019-07-19 09:59:05.169 INFO  com.kms.katalon.core.util.KeywordUtil    - Start generating HTML report folder at: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190719_095748...
+2019-07-19 09:59:05.249 INFO  com.kms.katalon.core.util.KeywordUtil    - HTML report generated
+2019-07-19 09:59:05.254 INFO  com.kms.katalon.core.util.KeywordUtil    - Start generating CSV report folder at: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190719_095748...
+2019-07-19 09:59:05.321 INFO  com.kms.katalon.core.util.KeywordUtil    - CSV report generated
+2019-07-19 09:59:05.341 INFO  com.kms.katalon.core.util.KeywordUtil    - Start generating JUnit report folder at: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190719_095748...
+2019-07-19 09:59:06.038 INFO  com.kms.katalon.core.util.KeywordUtil    - JUnit report generated
+2019-07-19 09:59:06.204 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2019-07-19 09:59:06.208 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/test_init
+2019-07-19 09:59:06.210 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
+Launcher status after execution process completed: Running
+Start writing execution.uuid file to folder: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190719_095748
+Copying report to folder /var/jenkins_home/workspace/test_job/test_auto/Reports/chrome...
+Uploading report to Katalon Analytics...
+Start sending test result to Katalon Analytics
+Uploading log files in folder path: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190719_095748
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190719_095748/execution.uuid
+KA: Start uploading report to KA server: https://analytics.katalon.com
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190719_095748/execution0.log
+KA: Start uploading report to KA server: https://analytics.katalon.com
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190719_095748.......................1/1(100%)
+--------------------------------------------------------------------------------
+
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190719_095748/execution.properties
+KA: Start uploading report to KA server: https://analytics.katalon.com
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init/20190719_095748/JUnit_Report.xml
+KA: Start uploading report to KA server: https://analytics.katalon.com
+Katalon Analytics - Execution URL: https://analytics.katalon.com/team/21720/project/27883/executions/164
+End sending to Katalon Analytics
+Report has been sent to Katalon Analytics
+
+--------------------------------------------------------------------------------
+Test Suites/test_init - Chrome - 20190719_095748.......................1/1(100%)
+--------------------------------------------------------------------------------
+
+Katalon Studio package has been downloaded already.
+Using Katalon Studio at /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1
+Making driver executables...
+Drivers folder at: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/drivers
+Set chromedriver as executable !
+Set geckodriver as executable !
+Execute [sh, -c, xvfb-run -a -n 0 -s "-screen 0 1024x768x24" /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/katalon -noSplash  -runMode=console  -browserType="Firefox" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/test_firefox" -projectPath="/var/jenkins_home/workspace/test_job/test_auto" --config -webui.autoUpdateDrivers=true --no-sandbox -apiKey=4d90b6b4-8dcd-4242-968b-06128a89eaa2 -reportFolder="/var/jenkins_home/workspace/test_job/test_auto/Reports/firefox" -reportFileName="firefox" 
+ ] in /tmp/katalon-8105760391090358248
+Katalon workspace folder is set to default location: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/config
+Starting Groovy-Eclipse compiler resolver.  Specified compiler level: unspecified
+170 2.4.7.xx-201611170128-e46 = ACTIVE
+
+
+INFO: Katalon Version: 6.2.1
+INFO: Command-line arguments: -runMode=console -browserType=Firefox -retry=0 -statusDelay=15 -testSuitePath=Test Suites/test_firefox -projectPath=/var/jenkins_home/workspace/test_job/test_auto --config -webui.autoUpdateDrivers=true --no-sandbox -apiKey=****** -reportFolder=/var/jenkins_home/workspace/test_job/test_auto/Reports/firefox -reportFileName=firefox
+INFO: User working dir: /tmp/katalon-8105760391090358248
+INFO: User home: /home/jenkins
+INFO: Java vendor: Oracle Corporation
+INFO: Java version: 1.8.0_212
+INFO: Local OS: Linux 64bit
+INFO: CPU load: 98%
+INFO: Total memory: 3948 MB
+INFO: Free memory: 1624 MB
+
+
+Start reloading plugins...
+Latest plugins responses: [{"id":16173,"status":1,"expiration_date":null,"created_at":"2019-07-17T12:12:23.509Z","updated_at":"2019-07-17T12:12:23.509Z","active":true,"send_expiration_mail":false,"send_expiration_reminder_mail":false,"user_id":10729,"bundled_plugin_id":null,"product":{"id":59,"plugin_id":null,"name":"Basic Report","description":"Basic Report Plugin is a Custom Keyword that replaces for the current Report feature of Katalon Studio. Since version 6.1.5, the Report feature has been migrated to Basic Report plugin.","logo":"m3j3hddvlvinco5i-BasicReport_140px.png","repository":"https://github.com/katalon-studio/katalon-studio-basic-report-plugin","documentation":"https://github.com/katalon-studio/katalon-studio-report-plugin/blob/master/docs/tutorials/usage.md","reference":null,"license":"","release_date":null,"qa_url":null,"status":1,"created_at":"2019-04-26T09:41:28.208Z","updated_at":"2019-06-20T08:47:11.762Z","overview":"Basic Report Plugin is a Custom Keyword that replaces for the current Report feature of Katalon Studio. Since [version 6.1.5](https://docs.katalon.com/katalon-studio/new/version-615.html), the Report feature has been migrated to Basic Report plugin.  Users need to install this plugin to continue using the feature.\r\n\r\n### Basic Report Plugin provides:\r\n- Generates automatically report from Test Suite report after every test execution with various formats: HTML, CSV, JUnit, and PDF.\r\n- Allows users to export manually Test Suite and Test Suite collection report to HTML, CSV, JUnit, and PDF. Right click on the report and choose Export as.\r\n\r\nFor more details, refer to [Basic Report document](https://docs.katalon.com/katalon-studio/docs/basic-report.html).\r\n","price":null,"stripe_product_id":null,"reject_reason":null,"latest_version_number":null,"product_type_id":2,"marketplace_id":null,"product_versions":[{"id":118,"number":"1.0.2","status":1,"created_at":"2019-05-15T04:35:14.552Z","updated_at":"2019-06-20T08:47:20.952Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""},{"id":99,"number":"1.0.1","status":1,"created_at":"2019-04-26T09:41:28.242Z","updated_at":"2019-06-20T08:47:20.953Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""},{"id":145,"number":"1.0.5","status":1,"created_at":"2019-06-20T08:44:52.820Z","updated_at":"2019-06-20T08:47:20.944Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},{"id":129,"number":"1.0.4","status":1,"created_at":"2019-05-24T09:48:58.985Z","updated_at":"2019-06-20T08:47:20.947Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},{"id":127,"number":"1.0.3","status":1,"created_at":"2019-05-24T02:43:18.285Z","updated_at":"2019-06-20T08:47:20.949Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""}],"product_type":{"id":2,"name":"Custom Keywords Plugin","description":"Custom Keywords Plugin","sequence":1,"created_at":"2019-03-14T08:13:50.036Z","updated_at":"2019-03-14T08:13:50.036Z","view_type":0},"product_categories":[{"id":2,"name":"Utilities","short_name":"","description":"Utilities","order":2,"hide":false,"use_carousel":true,"created_at":"2019-06-13T08:48:28.556Z","updated_at":"2019-06-13T08:48:28.556Z","product_join_category":{"id":22,"created_at":"2019-06-13T08:47:46.501Z","updated_at":"2019-06-13T08:47:46.501Z","product_id":59,"category_id":2}}],"logoUrl":"https://katalon-store.s3.amazonaws.com/m3j3hddvlvinco5i-BasicReport_140px.png","categories":"Utilities","url":"/product/59"},"license_type":{"id":1,"name":"Free","active":true,"day":null,"month":null,"year":null,"created_at":"2019-01-30T01:47:14.080Z","updated_at":"2019-01-30T01:47:14.080Z"},"free":true,"trial":false,"paid":false,"expired":false,"canceled":false,"uninstalled":false,"finalized":false,"compatible_versions":[{"id":118,"number":"1.0.2","status":1,"created_at":"2019-05-15T04:35:14.552Z","updated_at":"2019-06-20T08:47:20.952Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""},{"id":99,"number":"1.0.1","status":1,"created_at":"2019-04-26T09:41:28.242Z","updated_at":"2019-06-20T08:47:20.953Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""},{"id":145,"number":"1.0.5","status":1,"created_at":"2019-06-20T08:44:52.820Z","updated_at":"2019-06-20T08:47:20.944Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},{"id":129,"number":"1.0.4","status":1,"created_at":"2019-05-24T09:48:58.985Z","updated_at":"2019-06-20T08:47:20.947Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},{"id":127,"number":"1.0.3","status":1,"created_at":"2019-05-24T02:43:18.285Z","updated_at":"2019-06-20T08:47:20.949Z","min_app_version":"6.1.5","max_app_version":null,"change_log":""}],"latest_compatible_version":{"id":145,"number":"1.0.5","status":1,"created_at":"2019-06-20T08:44:52.820Z","updated_at":"2019-06-20T08:47:20.944Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},"current_version":{"id":145,"number":"1.0.5","status":1,"created_at":"2019-06-20T08:44:52.820Z","updated_at":"2019-06-20T08:47:20.944Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},"latest_version":{"id":145,"number":"1.0.5","status":1,"created_at":"2019-06-20T08:44:52.820Z","updated_at":"2019-06-20T08:47:20.944Z","min_app_version":"6.2.0","max_app_version":null,"change_log":""},"created_date":"July 17th 2019, 12:12 pm"}]
+Katalon version: 6.2.1
+Plugin info URL: https://store.katalon.com/api/products/ks?appVersion=6.2.1
+Plugin info: {
+  "expired": false,
+  "productId": 59,
+  "name": "Basic Report",
+  "id": 16173
+}
+Plugin ID: 16173. Plugin location: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/plugin/install/16173/1.0.5/katalon-studio-report-plugin.jar.
+Plugin "Basic Report" has been installed.
+Project path is a folder.
+Examine folder 'Plugins'.
+Examine file 'test_auto.prj'.
+Found project file '/var/jenkins_home/workspace/test_job/test_auto/test_auto.prj'.
+Examine file '.project'.
+Examine folder 'Reports'.
+Examine folder 'Scripts'.
+Examine folder '.git'.
+Examine folder 'Test Cases'.
+Examine folder 'Object Repository'.
+Examine folder 'Libs'.
+Examine folder 'Test Listeners'.
+Examine folder 'Test Suites'.
+Examine folder 'Keywords'.
+Examine folder 'Data Files'.
+Examine folder '.settings'.
+Examine folder 'bin'.
+Examine file 'README.md'.
+Examine folder 'Profiles'.
+Examine folder 'Include'.
+Examine folder 'settings'.
+Examine file 'console.properties'.
+Examine folder 'Checkpoints'.
+Examine file '.classpath'.
+Examine folder 'Drivers'.
+Delete folder: bin
+Delete folder: Libs
+Opening project file: /var/jenkins_home/workspace/test_job/test_auto/test_auto.prj
+Parsing custom keywords in Plugins folder...
+Generating global variables...
+Parsing custom keywords...
+Project 'test_auto' opened
+[INFO] Using WebDriverManager to resolve firefox
+[INFO] Using geckodriver 0.21.0 (since Mozilla Firefox 60 is installed in your machine)
+[INFO] Reading https://api.github.com/repos/mozilla/geckodriver/releases to seek geckodriver
+[INFO] Downloading https://github.com/mozilla/geckodriver/releases/download/v0.21.0/geckodriver-v0.21.0-linux64.tar.gz
+[INFO] Extracting binary from compressed file geckodriver-vlinux64v0.21.0-linux64.tar.gz
+[INFO] Overriding former binary /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/temp/webdriver/geckodriver
+[INFO] Resulting binary /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/temp/webdriver/geckodriver
+gecko driver is located at: /home/jenkins/.katalon/6.2.1/Katalon_Studio_Linux_64-6.2.1/configuration/resources/temp/webdriver/geckodriver
+
+--------------------------------------------------------------------------------
+Test Suites/test_firefox - Firefox - 20190719_100019.....................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 10:00:31.315 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/test_firefox
+2019-07-19 10:00:31.453 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = jenkins - 34de5c8c19e3
+2019-07-19 10:00:31.464 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Linux 64bit
+2019-07-19 10:00:31.476 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 172.17.0.4
+2019-07-19 10:00:31.483 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 6.2.1.2
+2019-07-19 10:00:32.552 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2019-07-19 10:00:32.556 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/test_case_firefox
+Start recording video for test case 'Test Cases/test_case_firefox'.
+2019-07-19 10:00:35.019 DEBUG testcase.test_case_firefox               - 1: openBrowser("https://www.google.fr/")
+2019-07-19 10:00:36.195 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Firefox' driver
+Jul 19, 2019 10:00:36 AM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFO: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+2019-07-19 10:00:36.726 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 seconds
+
+--------------------------------------------------------------------------------
+Test Suites/test_firefox - Firefox - 20190719_100019.....................0/1(0%)
+--------------------------------------------------------------------------------
+
+1563530438718	geckodriver	INFO	geckodriver 0.21.0
+1563530438767	geckodriver	INFO	Listening on 127.0.0.1:14444
+1563530440361	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.gYfCp0KgarwB"
+1563530452565	Marionette	INFO	Listening on port 36633
+1563530452692	Marionette	WARN	TLS certificate errors will be ignored for this session
+1563530452731	Marionette	INFO	Proxy settings initialised: {"proxyType":"direct"}
+Jul 19, 2019 10:00:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+
+--------------------------------------------------------------------------------
+Test Suites/test_firefox - Firefox - 20190719_100019.....................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 10:00:53.402 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = f6494691-450c-48d4-a6a9-95c051ac4b25
+2019-07-19 10:00:53.532 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Firefox 60.0
+2019-07-19 10:00:53.537 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Linux
+2019-07-19 10:00:53.550 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 3.141.59
+2019-07-19 10:00:53.568 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}
+2019-07-19 10:00:57.505 DEBUG testcase.test_case_firefox               - 2: setText(findTestObject("Object Repository/Page_Google/input_Connexion_q"), "docker hub")
+2019-07-19 10:00:58.996 DEBUG testcase.test_case_firefox               - 3: click(findTestObject("Page_Google/bouton_recherche"))
+2019-07-19 10:01:03.270 DEBUG testcase.test_case_firefox               - 4: click(findTestObject("Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub"))
+
+--------------------------------------------------------------------------------
+Test Suites/test_firefox - Firefox - 20190719_100019.....................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 10:01:21.438 DEBUG testcase.test_case_firefox               - 5: takeScreenshot("Reports/screenshots/firefox_checkpoint1.png")
+2019-07-19 10:01:22.215 DEBUG testcase.test_case_firefox               - 6: click(findTestObject("Object Repository/Page_Docker Hub/div_Sign In"))
+
+--------------------------------------------------------------------------------
+Test Suites/test_firefox - Firefox - 20190719_100019.....................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 10:01:25.319 DEBUG testcase.test_case_firefox               - 7: takeScreenshot("Reports/screenshots/firefox_checkpoint2.png")
+2019-07-19 10:01:25.886 DEBUG testcase.test_case_firefox               - 8: setText(findTestObject("Object Repository/Page_Log in to Docker/input_Docker ID_nw_username"), "bart_the_wacky@hotmail.com")
+2019-07-19 10:01:28.338 DEBUG testcase.test_case_firefox               - 9: setEncryptedText(findTestObject("Object Repository/Page_Log in to Docker/input_Password_nw_password"), "mvMLieaRys7gdrS5YCR2pQ==")
+2019-07-19 10:01:29.272 DEBUG testcase.test_case_firefox               - 10: click(findTestObject("Object Repository/Page_Log in to Docker/button_Sign In"))
+
+--------------------------------------------------------------------------------
+Test Suites/test_firefox - Firefox - 20190719_100019.....................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 10:01:44.313 DEBUG testcase.test_case_firefox               - 11: takeScreenshot("Reports/screenshots/firefox_checkpoint3.png")
+2019-07-19 10:01:44.733 DEBUG testcase.test_case_firefox               - 12: click(findTestObject("Object Repository/Page_Docker Hub/span_squashtf_test"))
+
+--------------------------------------------------------------------------------
+Test Suites/test_firefox - Firefox - 20190719_100019.....................0/1(0%)
+--------------------------------------------------------------------------------
+
+2019-07-19 10:01:55.707 DEBUG testcase.test_case_firefox               - 13: takeScreenshot("Reports/screenshots/firefox_checkpoint4.png")
+2019-07-19 10:01:56.106 DEBUG testcase.test_case_firefox               - 14: closeBrowser()
+console.log: Accessibility service init or shutdown observer does not exist.
+Video recording for test case 'Test Cases/test_case_firefox' .
+2019-07-19 10:02:01.155 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/test_case_firefox
+2019-07-19 10:02:01.913 INFO  com.kms.katalon.core.util.KeywordUtil    - Start generating HTML report folder at: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_firefox/20190719_100019...
+2019-07-19 10:02:01.976 INFO  com.kms.katalon.core.util.KeywordUtil    - HTML report generated
+2019-07-19 10:02:01.988 INFO  com.kms.katalon.core.util.KeywordUtil    - Start generating CSV report folder at: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_firefox/20190719_100019...
+2019-07-19 10:02:02.068 INFO  com.kms.katalon.core.util.KeywordUtil    - CSV report generated
+2019-07-19 10:02:02.078 INFO  com.kms.katalon.core.util.KeywordUtil    - Start generating JUnit report folder at: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_firefox/20190719_100019...
+2019-07-19 10:02:02.652 INFO  com.kms.katalon.core.util.KeywordUtil    - JUnit report generated
+2019-07-19 10:02:02.819 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2019-07-19 10:02:02.823 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/test_firefox
+2019-07-19 10:02:02.826 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
+Launcher status after execution process completed: Running
+Start writing execution.uuid file to folder: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_firefox/20190719_100019
+Copying report to folder /var/jenkins_home/workspace/test_job/test_auto/Reports/firefox...
+Uploading report to Katalon Analytics...
+Start sending test result to Katalon Analytics
+Uploading log files in folder path: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_firefox/20190719_100019
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_firefox/20190719_100019/execution.uuid
+KA: Start uploading report to KA server: https://analytics.katalon.com
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_firefox/20190719_100019/execution0.log
+KA: Start uploading report to KA server: https://analytics.katalon.com
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_firefox/20190719_100019/execution.properties
+
+--------------------------------------------------------------------------------
+Test Suites/test_firefox - Firefox - 20190719_100019...................1/1(100%)
+--------------------------------------------------------------------------------
+
+KA: Start uploading report to KA server: https://analytics.katalon.com
+Sending file: /var/jenkins_home/workspace/test_job/test_auto/Reports/test_firefox/20190719_100019/JUnit_Report.xml
+KA: Start uploading report to KA server: https://analytics.katalon.com
+Katalon Analytics - Execution URL: https://analytics.katalon.com/team/21720/project/27883/executions/165
+End sending to Katalon Analytics
+Report has been sent to Katalon Analytics
+
+--------------------------------------------------------------------------------
+Test Suites/test_firefox - Firefox - 20190719_100019...................1/1(100%)
+--------------------------------------------------------------------------------
+
+Archiving artifacts
+[htmlpublisher] Archiving HTML reports...
+[htmlpublisher] Archiving at BUILD level /var/jenkins_home/workspace/test_job/test_auto/Reports/firefox/$BUILD_TAG_firefox.html to /var/jenkins_home/jobs/test_job/builds/114/htmlreports/Rapport_20HTML_20pour_20firefox
+[htmlpublisher] Archiving at BUILD level /var/jenkins_home/workspace/test_job/test_auto/Reports/chrome/$BUILD_TAG_chrome.html to /var/jenkins_home/jobs/test_job/builds/114/htmlreports/Rapport_20HTML_20pour_20chrome
+Extended Email Publisher is currently disabled in project settings
+Finished: SUCCESS

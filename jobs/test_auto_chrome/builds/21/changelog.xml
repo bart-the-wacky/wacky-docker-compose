@@ -1,0 +1,35 @@
+commit cc2e8437b69ab4c6b0225764c6f801b8186e0caa
+tree f07f264be6c4ea1835e9a52184a24f30fa550a9b
+parent 24fa218a399d92bcf99c0ac15113376d8764996f
+author bart-the-wacky <bart_the_wacky@hotmail.com> 2019-07-23 10:52:38 +0200
+committer bart-the-wacky <bart_the_wacky@hotmail.com> 2019-07-23 10:52:38 +0200
+
+    ajout d'un wait pour les screenshots
+
+
+
+:100644 100644 c9e80a24b3cfdc6bfdc3454efd6fc7341cf74d39 c825aa8c0df6ad03f5637e4146b272a8c18ea204 M	Scripts/test_case_chrome/Script1563190084977.groovy
+:100644 100644 229cb38886d08a7b8ca1e58ab3181e015f2fe770 8b21c717e22328c3f11afd06d9d3f27bf47c8f29 M	Scripts/test_case_firefox/Script1563180344962.groovy
+commit 24fa218a399d92bcf99c0ac15113376d8764996f
+tree 17e1d7b50e06d9ca69bd92d50ce2c2136b52107c
+parent 00ca350a1c0866c0afb01a8e1aa64cf811405786
+author bart-the-wacky <bart_the_wacky@hotmail.com> 2019-07-23 10:47:39 +0200
+committer bart-the-wacky <bart_the_wacky@hotmail.com> 2019-07-23 10:47:39 +0200
+
+    ajout de clones de cas de test chrome
+
+
+
+:100644 100644 40e8f7a86f4d1aadc2c5a3541a06d46ca3613dd0 9c8d74b68b8f54045bef9c86e2401f9be04859bd M	Test Suites/test_init.ts
+commit 00ca350a1c0866c0afb01a8e1aa64cf811405786
+tree 71205a6e7a6a5799cc8473fe2db4ddeffcb948bf
+parent 6b7e8456e12a74a734c04b6cd646ca280dd93096
+author bart-the-wacky <bart_the_wacky@hotmail.com> 2019-07-23 10:46:28 +0200
+committer bart-the-wacky <bart_the_wacky@hotmail.com> 2019-07-23 10:46:28 +0200
+
+    Create launch.json
+
+    debug?
+
+
+:000000 100644 0000000000000000000000000000000000000000 90e9fcc2ae9726f62c1a17113d22b33c0f75fe01 A	.vscode/launch.json

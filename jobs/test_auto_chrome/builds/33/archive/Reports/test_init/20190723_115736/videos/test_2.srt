@@ -1,0 +1,72 @@
+1
+00:00:00,013 --> 00:00:00,031
+1. openBrowser("https://www.google.fr/")
+
+2
+00:00:06,620 --> 00:00:06,636
+5. setText(findTestObject("Object Repository/Page_Google/input_Connexion_q"), "docker hub")
+
+3
+00:00:07,776 --> 00:00:07,784
+9. click(findTestObject("Page_Google/bouton_recherche"))
+
+4
+00:00:11,005 --> 00:00:11,017
+13. click(findTestObject("Object Repository/Page_docker hub - Recherche Google/h3_Docker Hub"))
+
+5
+00:00:20,397 --> 00:00:20,417
+17. waitForPageLoad(5)
+
+6
+00:00:20,473 --> 00:00:20,505
+21. takeScreenshot("Reports/screenshots/chrome_checkpoint1.png")
+
+7
+00:00:21,236 --> 00:00:21,251
+25. click(findTestObject("Object Repository/Page_Docker Hub/div_Sign In"))
+
+8
+00:00:23,497 --> 00:00:23,505
+29. waitForPageLoad(5)
+
+9
+00:00:23,572 --> 00:00:23,580
+33. takeScreenshot("Reports/screenshots/chrome_checkpoint2.png")
+
+10
+00:00:26,053 --> 00:00:26,073
+37. setText(findTestObject("Object Repository/Page_Log in to Docker/input_Docker ID_nw_username"), "bart_the_wacky@hotmail.com")
+
+11
+00:00:27,093 --> 00:00:27,099
+41. setEncryptedText(findTestObject("Object Repository/Page_Log in to Docker/input_Password_nw_password"), "mvMLieaRys7gdrS5YCR2pQ==")
+
+12
+00:00:27,807 --> 00:00:27,814
+45. click(findTestObject("Object Repository/Page_Log in to Docker/button_Sign In"))
+
+13
+00:00:28,226 --> 00:00:28,236
+49. waitForPageLoad(10)
+
+14
+00:00:28,290 --> 00:00:28,316
+53. takeScreenshot("Reports/screenshots/chrome_checkpoint3.png")
+
+15
+00:00:36,728 --> 00:00:36,735
+57. click(findTestObject("Object Repository/Page_Docker Hub/span_squashtf_test"))
+
+16
+00:00:42,030 --> 00:00:42,055
+61. waitForElementClickable(findTestObject("Page_Docker Hub/span_squashtf_test"), 15)
+
+17
+00:00:59,117 --> 00:00:59,133
+65. takeScreenshot("Reports/screenshots/chrome_checkpoint4.png")
+
+18
+00:00:59,766 --> 00:00:59,776
+69. closeBrowser()
+

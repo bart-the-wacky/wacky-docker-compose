@@ -1,0 +1,11 @@
+commit 86b4115f4bc8de3e4a4ead888c34e87a65066f55
+tree 4e11ee75e99008517bda49f22f8eab16a1913e5d
+parent 97a4e5edd0ab8b552f0bc0b794305623c2852984
+author bart-the-wacky <bart_the_wacky@hotmail.com> 2019-07-23 13:56:35 +0200
+committer bart-the-wacky <bart_the_wacky@hotmail.com> 2019-07-23 13:56:35 +0200
+
+    correctif 1124 pour un screenshot 4 correct
+
+
+
+:100644 100644 710f490d9fba54c6cabda3381fe2e89b9c25b8b2 cb7fe3e18aaa91aa0b27bcf03eea1e21624669d7 M	Scripts/test_case_chrome/Script1563190084977.groovy
