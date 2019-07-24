@@ -1,0 +1,94 @@
+version: "3"
+services:
+  jenkins:
+    container_name: jenkins
+    image: bartthewacky/wacky-jenkins-kat
+    ports:
+      - 8080:8080
+      - 50000:50000
+      - 465:465
+      - 9515:9515
+    environment:
+      - JENKINS_SLAVE_AGENT_PORT=50000
+      - LANG=C.UTF-8
+      - HOSTNAME=1345bc60a502
+      - JENKINS_UC=https://updates.jenkins.io
+      - JAVA_HOME=/docker-java-home
+      - JAVA_VERSION=8u181
+      - PWD=/
+      - HOME=/var/jenkins_home
+      - COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log
+      - JENKINS_HOME=/var/jenkins_home
+      - CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
+      - JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1
+      - TERM=xterm
+      - JENKINS_INCREMENTALS_REPO_MIRROR=https://repo.jenkins-ci.org/incrementals
+      - SHLVL=1
+      - JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      - JENKINS_VERSION=2.151
+    volumes:
+      - jenkins-home:/var/jenkins_home
+
+  agent-chrome:
+    container_name: agent-chrome
+    image: bartthewacky/wacky-agent-chrome
+    environment:
+      - LANG=C.UTF-8
+      - HOSTNAME=56a4f166d459
+      - MAVEN_HOME=/usr/share/maven
+      - JAVA_HOME=/docker-java-home
+      - JAVA_VERSION=8u171
+      - PWD=/home/jenkins
+      - HOME=/home/jenkins
+      - JENKINS_AGENT_NAME=agent_test
+      - MAVEN_CONFIG=/home/jenkins/.m2
+      - JENKINS_HOME=/home/jenkins/agent
+      - JENKINS_SECRET=90604cbd1934d6675831daf7edf8384dc79282a56f1a5ba785c0471ac45ebdb0
+      - CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
+      - AGENT_WORKDIR=/home/jenkins/agent
+      - JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
+      - TERM=xterm
+      - SHLVL=1
+      - JENKINS_USER=jenkins
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      - SQUASH_TA_HOME=/home/jenkins/agent
+    volumes:
+      - jenkins-data:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - jenkins
+    
+  agent-firefox:
+    container_name: agent-firefox
+    image: bartthewacky/wacky-agent-firefox
+    environment:
+      - LANG=C.UTF-8
+      - HOSTNAME=35d541c11c60
+      - MAVEN_HOME=/usr/share/maven
+      - JAVA_HOME=/docker-java-home
+      - JAVA_VERSION=8u171
+      - PWD=/home/jenkins
+      - HOME=/home/jenkins
+      - JENKINS_AGENT_NAME=agent_firefox
+      - MAVEN_CONFIG=/home/jenkins/.m2
+      - JENKINS_HOME=/home/jenkins/agent
+      - JENKINS_SECRET=af0c43cc22c7db5f8738ba4bdb3f54528e995ec6ff44e068f97398fea4234d0c
+      - CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
+      - AGENT_WORKDIR=/home/jenkins/agent
+      - JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
+      - TERM=xterm
+      - SHLVL=1
+      - JENKINS_USER=jenkins
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      - SQUASH_TA_HOME=/home/jenkins/agent
+    volumes:
+      - jenkins-data:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      - jenkins
+      - agent-chrome
+
+volumes:
+  jenkins-home:
+  jenkins-data:
