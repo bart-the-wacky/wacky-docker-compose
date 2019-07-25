@@ -2,7 +2,20 @@ FROM bartthewacky/wacky-agent-chrome
 
 MAINTAINER BARTHELEMY Romain <bart_the_wacky@hotmail.com>
 
-RUN apt-get update && apt-get install -y nginx curl apt-transport-https && sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list' && apt-get update && apt-get install -y xorg xvfb google-chrome-stable chromedriver && chmod -R 777 /home/jenkins	
+RUN apt-get update \
+    && apt-get install -y \
+        nginx \
+		curl \
+		apt-transport-https \
+	&& sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list' \
+    && apt-get update \
+    && apt-get install -y \
+       xorg \
+	   xvfb \
+	   google-chrome-stable \
+	   chromedriver \
+	&& chmod -R 777 /home/jenkins \
+	&& rm -rf /var/lib/apt/lists/*	
 		
 COPY nginx.conf /etc/nginx/nginx.conf
 
