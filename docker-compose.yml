@@ -28,7 +28,8 @@ services:
       - JENKINS_VERSION=2.151
     volumes:
       - jenkins-home:/var/jenkins_home
-    build: wacky-jenkins-kat/.
+    build: 
+      context: wacky-jenkins-kat/.
     deploy:
       restart_policy:
         condition: on-failure
@@ -62,7 +63,7 @@ services:
       - jenkins-data:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
     build:
-      context: .
+      context: wacky-agent-chrome/.
       args: 
         - url="192.168.99.101:8080"
     deploy:
@@ -101,7 +102,7 @@ services:
       - jenkins-data:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
     build:
-      context: .
+      context: wacky-agent-firefox/.
       args: 
         - url="192.168.99.101:8080"
     deploy:

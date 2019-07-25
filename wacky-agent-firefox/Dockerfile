@@ -2,10 +2,7 @@ FROM bartthewacky/wacky-agent-firefox
 
 MAINTAINER BARTHELEMY Romain <bart_the_wacky@hotmail.com>
 
-RUN apt-get update \
-    && apt-get install -y \
-        nginx curl apt-transport-https xorg xvfb firefox-esr
-	&& chmod -R 777 /home/jenkins	
+RUN apt-get update && apt-get install -y nginx curl apt-transport-https xorg xvfb firefox-esr && chmod -R 777 /home/jenkins	
 		
 COPY nginx.conf /etc/nginx/nginx.conf
 

@@ -4,9 +4,7 @@ MAINTAINER BARTHELEMY Romain <bart_the_wacky@hotmail.com>
 
 ADD ../. /code
 
-RUN apt-get update \
-    && apt-get install -y \
-        nginx curl apt-transport-https
+RUN apt-get update && apt-get install -y nginx curl apt-transport-https git && git clone https://github.com/bart-the-wacky/wacky-docker-compose.git && cp wacky-docker-compose/plugin.txt /usr/share/jenkins
 		
 COPY nginx.conf /etc/nginx/nginx.conf
 
