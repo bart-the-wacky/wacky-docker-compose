@@ -1,4 +1,0 @@
-1
-00:00:01,644 --> 00:00:01,666
-1. openBrowser("https://www.google.fr/")
-

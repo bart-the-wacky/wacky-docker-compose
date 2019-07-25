@@ -1,5 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
-test_firefox,,,,2019-07-19 12:47:01,2019-07-19 12:47:14,13.275s,INCOMPLETE
-,,,,,,,
-Test Cases/test_case_firefox,,test case initial de test du navigateur firefox,firefox,2019-07-19 12:47:03,2019-07-19 12:47:14,11.236s,FAILED
-"openBrowser(""https://www.google.fr/"")",,,,2019-07-19 12:47:07,2019-07-19 12:47:11,4.026s,FAILED

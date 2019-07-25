@@ -1,4 +1,0 @@
-5
-00:02:58,737 --> 00:02:58,770
-17. takeScreenshot("Reports/screenshots/firefox_checkpoint1.png")
-

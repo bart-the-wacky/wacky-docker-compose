@@ -1,5 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
-test_init,,suite de test initiale afin de tester la connection au jenkins docker,,2019-07-19 12:39:53,2019-07-19 12:40:11,17.492s,INCOMPLETE
-,,,,,,,
-Test Cases/test_case_chrome,,test case initial de test du navigateur firefox,firefox,2019-07-19 12:39:54,2019-07-19 12:40:11,16.324s,FAILED
-"openBrowser(""https://www.google.fr/"")",,,,2019-07-19 12:39:57,2019-07-19 12:40:08,11.283s,FAILED
