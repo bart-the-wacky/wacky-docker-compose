@@ -11,7 +11,6 @@ services:
     environment:
       - JENKINS_SLAVE_AGENT_PORT=50000
       - LANG=C.UTF-8
-      - HOSTNAME=1345bc60a502
       - JENKINS_UC=https://updates.jenkins.io
       - JAVA_HOME=/docker-java-home
       - JAVA_VERSION=8u181
@@ -29,13 +28,19 @@ services:
       - JENKINS_VERSION=2.151
     volumes:
       - jenkins-home:/var/jenkins_home
+    build: wacky-jenkins-kat/.
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 10s
+        max_attempts: 3
+        window: 120s
 
   agent-chrome:
     container_name: agent-chrome
     image: bartthewacky/wacky-agent-chrome
     environment:
       - LANG=C.UTF-8
-      - HOSTNAME=56a4f166d459
       - MAVEN_HOME=/usr/share/maven
       - JAVA_HOME=/docker-java-home
       - JAVA_VERSION=8u171
@@ -56,6 +61,17 @@ services:
     volumes:
       - jenkins-data:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
+    build:
+      context: .
+      args: 
+        - url="192.168.99.101:8080"
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+        delay: 10s
+        max_attempts: 3
+        window: 120s
     depends_on:
       - jenkins
     
@@ -64,7 +80,6 @@ services:
     image: bartthewacky/wacky-agent-firefox
     environment:
       - LANG=C.UTF-8
-      - HOSTNAME=35d541c11c60
       - MAVEN_HOME=/usr/share/maven
       - JAVA_HOME=/docker-java-home
       - JAVA_VERSION=8u171
@@ -85,6 +100,17 @@ services:
     volumes:
       - jenkins-data:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
+    build:
+      context: .
+      args: 
+        - url="192.168.99.101:8080"
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+        delay: 10s
+        max_attempts: 3
+        window: 120s
     depends_on:
       - jenkins
       - agent-chrome
