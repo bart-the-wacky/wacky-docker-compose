@@ -100,7 +100,7 @@ services:
     build:
       context: wacky-agent-firefox/.
       args: 
-        - -user=jenkins
+        - user=jenkins
     # deploy:
       # replicas: 1
       # restart_policy:
