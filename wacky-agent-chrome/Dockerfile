@@ -9,7 +9,6 @@ RUN apt-get update \
         nginx \
 		curl \
 		apt-transport-https \
-	&& chmod -R 777 /var \ 
 	&& sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list' \
 	&& apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-unauthenticated \
