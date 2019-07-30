@@ -2,6 +2,8 @@ FROM bartthewacky/wacky-agent
 
 MAINTAINER BARTHELEMY Romain <bart_the_wacky@hotmail.com>
 
+USER jenkins
+
 RUN apt-get update \
     && apt-get install -y \
         nginx \
