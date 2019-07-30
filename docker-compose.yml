@@ -51,7 +51,6 @@ services:
       - CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
       - AGENT_WORKDIR=/home/jenkins/agent
       - JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
-      - JENKINS_USER=jenkins
       - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
       - SQUASH_TA_HOME=/home/jenkins/agent
       - JENKINS_URL=http://192.168.99.101:8080/
@@ -90,7 +89,6 @@ services:
       - CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
       - AGENT_WORKDIR=/home/jenkins/agent
       - JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
-      - JENKINS_USER=jenkins
       - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
       - SQUASH_TA_HOME=/home/jenkins/agent
       - JENKINS_URL=http://192.168.99.101:8080/
