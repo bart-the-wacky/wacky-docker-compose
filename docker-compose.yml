@@ -1,7 +1,6 @@
 version: "3"
 services:
   jenkins:
-    container_name: jenkins
     image: bartthewacky/wacky-jenkins-kat
     ports:
       - 8080:8080
@@ -12,8 +11,6 @@ services:
       - JENKINS_SLAVE_AGENT_PORT=50000
       - LANG=C.UTF-8
       - JENKINS_UC=https://updates.jenkins.io
-      - JAVA_HOME=/docker-java-home
-      - JAVA_VERSION=8u181
       - PWD=/
       - HOME=/var/jenkins_home
       - COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log
@@ -26,20 +23,20 @@ services:
       - JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental
       - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
       - JENKINS_VERSION=2.151
+      - JENKINS_HOST_HOME=/data/jenkins
     volumes:
       - jenkins-home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
     build: 
       context: wacky-jenkins-kat/.
-    deploy:
-      restart_policy:
-        condition: on-failure
-        delay: 10s
-        max_attempts: 3
-        window: 120s
-
+    healthcheck:
+        test: ["CMD", "curl", "-f", "http://192.168.99.101:8080"]
+        interval: 45s
+        timeout: 10s
+        retries: 5
+     
   agent-chrome:
-    container_name: agent-chrome
-    image: bartthewacky/wacky-agent-chrome
+    image: bartthewacky/wacky-agent
     environment:
       - LANG=C.UTF-8
       - MAVEN_HOME=/usr/share/maven
@@ -47,38 +44,38 @@ services:
       - JAVA_VERSION=8u171
       - PWD=/home/jenkins
       - HOME=/home/jenkins
-      - JENKINS_AGENT_NAME=agent_test
+      - JENKINS_AGENT_NAME=agent_chrome
+      - JENKINS_SECRET=829f4bb45f8deeff3eae48ffdc9c08b30d48f65ce9023d5b2ffecb3bce41906b
       - MAVEN_CONFIG=/home/jenkins/.m2
       - JENKINS_HOME=/home/jenkins/agent
-      - JENKINS_SECRET=90604cbd1934d6675831daf7edf8384dc79282a56f1a5ba785c0471ac45ebdb0
       - CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
       - AGENT_WORKDIR=/home/jenkins/agent
       - JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
-      - TERM=xterm
-      - SHLVL=1
       - JENKINS_USER=jenkins
       - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
       - SQUASH_TA_HOME=/home/jenkins/agent
+      - JENKINS_URL=http://192.168.99.101:8080/
     volumes:
       - jenkins-data:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
     build:
       context: wacky-agent-chrome/.
       args: 
-        - url="192.168.99.101:8080"
-    deploy:
-      replicas: 2
-      restart_policy:
-        condition: on-failure
-        delay: 10s
-        max_attempts: 3
-        window: 120s
+        - -user=jenkins
+    # deploy:
+      # replicas: 1
+      # restart_policy:
+        # condition: on-failure
+        # delay: 30s
+        # max_attempts: 2
     depends_on:
       - jenkins
+    links: 
+      - jenkins
+    restart: on-failure
     
   agent-firefox:
-    container_name: agent-firefox
-    image: bartthewacky/wacky-agent-firefox
+    image: bartthewacky/wacky-agent
     environment:
       - LANG=C.UTF-8
       - MAVEN_HOME=/usr/share/maven
@@ -87,34 +84,35 @@ services:
       - PWD=/home/jenkins
       - HOME=/home/jenkins
       - JENKINS_AGENT_NAME=agent_firefox
+      - JENKINS_SECRET=af0c43cc22c7db5f8738ba4bdb3f54528e995ec6ff44e068f97398fea4234d0c
       - MAVEN_CONFIG=/home/jenkins/.m2
       - JENKINS_HOME=/home/jenkins/agent
-      - JENKINS_SECRET=af0c43cc22c7db5f8738ba4bdb3f54528e995ec6ff44e068f97398fea4234d0c
       - CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
       - AGENT_WORKDIR=/home/jenkins/agent
       - JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
-      - TERM=xterm
-      - SHLVL=1
       - JENKINS_USER=jenkins
       - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
       - SQUASH_TA_HOME=/home/jenkins/agent
+      - JENKINS_URL=http://192.168.99.101:8080/
     volumes:
       - jenkins-data:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
     build:
       context: wacky-agent-firefox/.
       args: 
-        - url="192.168.99.101:8080"
-    deploy:
-      replicas: 2
-      restart_policy:
-        condition: on-failure
-        delay: 10s
-        max_attempts: 3
-        window: 120s
+        - -user=jenkins
+    # deploy:
+      # replicas: 1
+      # restart_policy:
+        # condition: on-failure
+        # delay: 600s
+        # max_attempts: 2
+        # window: 120s
     depends_on:
       - jenkins
-      - agent-chrome
+    links: 
+      - jenkins
+    restart: on-failure
 
 volumes:
   jenkins-home:
