@@ -61,7 +61,7 @@ services:
     build:
       context: wacky-agent-chrome/.
       args: 
-        - -user=jenkins
+        - user=jenkins
     # deploy:
       # replicas: 1
       # restart_policy:

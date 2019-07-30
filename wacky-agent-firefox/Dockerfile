@@ -1,24 +1,16 @@
-FROM bartthewacky/wacky-agent-firefox
+FROM bartthewacky/wacky-agent
 
 MAINTAINER BARTHELEMY Romain <bart_the_wacky@hotmail.com>
 
 RUN apt-get update \
-    && apt-get install -y \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y \
         nginx\
 		curl \
 		apt-transport-https \
 		xorg \
 		xvfb \
-		firefox-esr 
-	&& chmod -R 777 /home/jenkins \
+		firefox-esr \
+	&& chmod -R 777 /var/jenkins_home \
 	&& rm -rf /var/lib/apt/lists/*	
-		
-COPY nginx.conf /etc/nginx/nginx.conf
-
-COPY service_start.sh /home/docker/script/service_start.sh
-
-RUN chmod 744 /home/docker/script/service_start.sh
-
-ENTRYPOINT /home/docker/script/service_start.sh
 
 WORKDIR /var/jenkins_home
