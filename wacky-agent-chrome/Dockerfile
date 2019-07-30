@@ -7,7 +7,7 @@ RUN apt-get update \
         nginx \
 		curl \
 		apt-transport-https \
-	&& sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list' \
+	&& echo "deb https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list \
     && apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y \
        xorg \
