@@ -14,6 +14,7 @@ RUN apt-get update \
 	   xvfb \
 	   google-chrome-stable \
 	   chromedriver \
+	&& chmod -R 777 /var/jenkins_home \
 	&& chmod -R 777 /home/jenkins \
 	&& rm -rf /var/lib/apt/lists/*	
 

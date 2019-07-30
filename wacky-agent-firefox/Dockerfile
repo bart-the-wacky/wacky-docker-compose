@@ -11,6 +11,7 @@ RUN apt-get update \
 		xvfb \
 		firefox-esr \
 	&& chmod -R 777 /var/jenkins_home \
+	&& chmod -R 777 /home/jenkins \
 	&& rm -rf /var/lib/apt/lists/*	
 
 WORKDIR /var/jenkins_home

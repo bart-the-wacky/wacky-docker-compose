@@ -11,6 +11,7 @@ RUN apt-get update \
 	&& git clone https://github.com/bart-the-wacky/wacky-docker-compose.git \
 	&& cp -R wacky-docker-compose/jenkins_home /var \
 	&& chmod -R 777 /var/jenkins_home \
+	&& chmod -R 777 /home/jenkins \
 	&& rm -rf /var/lib/apt/lists/*
 
 WORKDIR /var/jenkins_home
