@@ -17,5 +17,7 @@ RUN apt-get update \
 	&& chmod -R 777 /var/jenkins_home \
 	&& chmod -R 777 /home/jenkins \
 	&& rm -rf /var/lib/apt/lists/*	
+	
+ARGS user
 
 WORKDIR /var/jenkins_home

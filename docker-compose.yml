@@ -61,7 +61,7 @@ services:
     build:
       context: wacky-agent-chrome/.
       args: 
-        - user=jenkins
+        - u="jenkins"
     # deploy:
       # replicas: 1
       # restart_policy:
@@ -100,7 +100,7 @@ services:
     build:
       context: wacky-agent-firefox/.
       args: 
-        - user=jenkins
+        - u="jenkins"
     # deploy:
       # replicas: 1
       # restart_policy:
