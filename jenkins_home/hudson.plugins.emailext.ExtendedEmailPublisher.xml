@@ -1,0 +1,37 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.plugins.emailext.ExtendedEmailPublisherDescriptor plugin="email-ext@2.66">
+  <mailAccount>
+    <smtpHost>smtp.gmail.com</smtpHost>
+    <smtpPort>465</smtpPort>
+    <smtpUsername>bart.the.wacky@gmail.com</smtpUsername>
+    <smtpPassword>{AQAAABAAAAAQ+AcdZWYa2YM/tvUXrq3f0tpxzHPHYkx6SlHz8gIUxy8=}</smtpPassword>
+    <useSsl>true</useSsl>
+    <advProperties>&#xd;
+</advProperties>
+  </mailAccount>
+  <addAccounts/>
+  <charset>UTF-8</charset>
+  <defaultContentType>text/html</defaultContentType>
+  <defaultSubject>$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!</defaultSubject>
+  <defaultBody>$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:&#xd;
+&#xd;
+Check console output at $BUILD_URL to view the results.</defaultBody>
+  <defaultPresendScript></defaultPresendScript>
+  <defaultPostsendScript></defaultPostsendScript>
+  <defaultClasspath/>
+  <defaultTriggerIds>
+    <string>hudson.plugins.emailext.plugins.trigger.FailureTrigger</string>
+  </defaultTriggerIds>
+  <emergencyReroute>bart.the.wacky@gmail.com</emergencyReroute>
+  <maxAttachmentSize>20971520</maxAttachmentSize>
+  <recipientList>bart.the.wacky@gmail.com</recipientList>
+  <defaultReplyTo>bart.the.wacky@gmail.com</defaultReplyTo>
+  <allowedDomains></allowedDomains>
+  <excludedCommitters></excludedCommitters>
+  <overrideGlobalSettings>true</overrideGlobalSettings>
+  <precedenceBulk>false</precedenceBulk>
+  <debugMode>true</debugMode>
+  <requireAdminForTemplateTesting>false</requireAdminForTemplateTesting>
+  <enableWatching>false</enableWatching>
+  <enableAllowUnregistered>true</enableAllowUnregistered>
+</hudson.plugins.emailext.ExtendedEmailPublisherDescriptor>

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Group-Id: org.jenkins-ci.plugins
+Jenkins-Version: 1.651.3
+Plugin-Dependencies: junit:1.11
+Plugin-Developers: Benoit Siri:bsiri:bsiri@henix.fr,:devsquash:devsqua
+ sh@henix.fr
+Short-Name: squashtm-publisher
+Plugin-Version: 1.0.0
+PluginFirstClassLoader: true
+Long-Name: Squash TM Publisher (Squash4Jenkins)
+Extension-Name: squashtm-publisher
+Url: https://wiki.jenkins.io/display/JENKINS/Squash4Jenkins+Plugin
+

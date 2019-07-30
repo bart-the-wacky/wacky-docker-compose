@@ -1,0 +1,125 @@
+Started by user [8mha:////4AUDbHayNnIXFVFxdM0fFa7o2lPCAEQ0MdulVlSFXDq+AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[EnvInject] - Loading node environment variables.
+[EnvInject] - Preparing an environment for the build.
+[EnvInject] - Keeping Jenkins build variables.
+[EnvInject] - Injecting contributions.
+Building remotely on [8mha:////4Gwal6rwKFITByp+fg01kbO++qaiF7qfnCgPBbQ+pMS7AAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/cT01LyS+OSMovzcVAD8Ui1AywAAAA==[0magent_chrome (chrome linux squashtf) in workspace /var/jenkins_home/workspace/test_job/test_auto
+Also:   hudson.remoting.Channel$CallSiteStackTrace: Remote call to JNLP4-connect connection from 172.19.0.1/172.19.0.1:35202
+		at hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1741)
+		at hudson.remoting.UserRequest$ExceptionResponse.retrieve(UserRequest.java:357)
+		at hudson.remoting.Channel.call(Channel.java:955)
+		at hudson.FilePath.act(FilePath.java:1070)
+		at hudson.FilePath.act(FilePath.java:1059)
+		at hudson.FilePath.mkdirs(FilePath.java:1244)
+		at hudson.model.AbstractProject.checkout(AbstractProject.java:1202)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:574)
+		at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:86)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:499)
+		at hudson.model.Run.execute(Run.java:1810)
+		at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+		at hudson.model.ResourceController.execute(ResourceController.java:97)
+		at hudson.model.Executor.run(Executor.java:429)
+java.nio.file.AccessDeniedException: /var/jenkins_home/workspace
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:84)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:384)
+	at java.nio.file.Files.createDirectory(Files.java:674)
+	at java.nio.file.Files.createAndCheckIsDirectory(Files.java:781)
+	at java.nio.file.Files.createDirectories(Files.java:767)
+	at hudson.FilePath.mkdirs(FilePath.java:3271)
+	at hudson.FilePath.access$1300(FilePath.java:211)
+	at hudson.FilePath$Mkdirs.invoke(FilePath.java:1252)
+	at hudson.FilePath$Mkdirs.invoke(FilePath.java:1248)
+	at hudson.FilePath$FileCallableWrapper.call(FilePath.java:3084)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:212)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:369)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Archiving artifacts
+ERROR: Build step failed with exception
+Also:   hudson.remoting.Channel$CallSiteStackTrace: Remote call to JNLP4-connect connection from 172.19.0.1/172.19.0.1:35202
+		at hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1741)
+		at hudson.remoting.UserRequest$ExceptionResponse.retrieve(UserRequest.java:357)
+		at hudson.remoting.Channel.call(Channel.java:955)
+		at hudson.FilePath.act(FilePath.java:1070)
+		at hudson.FilePath.act(FilePath.java:1059)
+		at hudson.tasks.ArtifactArchiver.perform(ArtifactArchiver.java:233)
+		at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:81)
+		at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+		at hudson.model.Build$BuildExecution.post2(Build.java:186)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+		at hudson.model.Run.execute(Run.java:1835)
+		at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+		at hudson.model.ResourceController.execute(ResourceController.java:97)
+		at hudson.model.Executor.run(Executor.java:429)
+/var/jenkins_home/workspace/test_job/test_auto does not exist.
+	at org.apache.tools.ant.types.AbstractFileSet.getDirectoryScanner(AbstractFileSet.java:484)
+	at org.apache.tools.ant.types.AbstractFileSet.getDirectoryScanner(AbstractFileSet.java:461)
+	at hudson.tasks.ArtifactArchiver$ListFiles.invoke(ArtifactArchiver.java:288)
+	at hudson.tasks.ArtifactArchiver$ListFiles.invoke(ArtifactArchiver.java:268)
+	at hudson.FilePath$FileCallableWrapper.call(FilePath.java:3084)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:212)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:369)
+	at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:93)
+	at java.lang.Thread.run(Thread.java:748)
+Build step 'Archive the artifacts' marked build as failure
+[htmlpublisher] Archiving HTML reports...
+[htmlpublisher] Archiving at BUILD level /var/jenkins_home/workspace/test_job/test_auto/Reports/test_init to /var/jenkins_home/jobs/test_auto_chrome/builds/53/htmlreports/Rapport_HTML_chrome
+Sending e-mails to: bart_the_wacky@hotmail.com
+Checking for post-build
+Performing post-build step
+Checking if email needs to be generated
+Email was triggered for: Failure - Any
+Sending email for trigger: Failure - Any
+messageContentType = text/html; charset=UTF-8
+ERROR: Error accessing files to attach: /var/jenkins_home/workspace/test_job/test_auto does not exist.
+Request made to attach build log
+Emergency reroute turned on
+Analyzing: bart.the.wacky@gmail.com
+Looking for: bart.the.wacky@gmail.com
+	starting at: 0
+	firstFoundIdx: 0
+	firstFoundIdx-substring: bart.the.wacky@gmail.com
+	=> found type: 0
+Analyzing: bart.the.wacky@gmail.com
+Looking for: bart.the.wacky@gmail.com
+	starting at: 0
+	firstFoundIdx: 0
+	firstFoundIdx-substring: bart.the.wacky@gmail.com
+	=> found type: 0
+Analyzing: bart.the.wacky@gmail.com
+Looking for: bart.the.wacky@gmail.com
+	starting at: 0
+	firstFoundIdx: 0
+	firstFoundIdx-substring: bart.the.wacky@gmail.com
+	=> found type: 0
+Emergency reroute is set to: bart.the.wacky@gmail.com
+Analyzing: bart.the.wacky@gmail.com
+Looking for: bart.the.wacky@gmail.com
+	starting at: 0
+	firstFoundIdx: 0
+	firstFoundIdx-substring: bart.the.wacky@gmail.com
+	=> found type: 0
+Analyzing: bart.the.wacky@gmail.com
+Looking for: bart.the.wacky@gmail.com
+	starting at: 0
+	firstFoundIdx: 0
+	firstFoundIdx-substring: bart.the.wacky@gmail.com
+	=> found type: 0
+Setting In-Reply-To since last build was not successful
+Successfully created MimeMessage
+Sending email to: bart.the.wacky@gmail.com
+Finished: FAILURE

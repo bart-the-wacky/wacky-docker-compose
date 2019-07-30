@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+repositories/file\:_Applications_jenkins-2.138.1-2_apps_jenkins_jenkins_home_workspace_katalon_release-6.2.1_source_com.kms.katalon.product_target/description=
+repositories/file\:_Applications_jenkins-2.138.1-2_apps_jenkins_jenkins_home_workspace_katalon_release-6.2.1_source_com.kms.katalon.product_target/enabled=true
+repositories/file\:_Applications_jenkins-2.138.1-2_apps_jenkins_jenkins_home_workspace_katalon_release-6.2.1_source_com.kms.katalon.product_target/isSystem=false
+repositories/file\:_Applications_jenkins-2.138.1-2_apps_jenkins_jenkins_home_workspace_katalon_release-6.2.1_source_com.kms.katalon.product_target/name=module-metadata-repository@/Applications/jenkins-2.138.1-2/apps/jenkins/jenkins_home/workspace/katalon_release-6.2.1/source/com.kms.katalon.product/target
+repositories/file\:_Applications_jenkins-2.138.1-2_apps_jenkins_jenkins_home_workspace_katalon_release-6.2.1_source_com.kms.katalon.product_target/provider=
+repositories/file\:_Applications_jenkins-2.138.1-2_apps_jenkins_jenkins_home_workspace_katalon_release-6.2.1_source_com.kms.katalon.product_target/suffix=p2content.xml
+repositories/file\:_Applications_jenkins-2.138.1-2_apps_jenkins_jenkins_home_workspace_katalon_release-6.2.1_source_com.kms.katalon.product_target/type=org.eclipse.tycho.repository.module.ModuleMetadataRepository
+repositories/file\:_Applications_jenkins-2.138.1-2_apps_jenkins_jenkins_home_workspace_katalon_release-6.2.1_source_com.kms.katalon.product_target/uri=file\:/Applications/jenkins-2.138.1-2/apps/jenkins/jenkins_home/workspace/katalon_release-6.2.1/source/com.kms.katalon.product/target/
+repositories/file\:_Applications_jenkins-2.138.1-2_apps_jenkins_jenkins_home_workspace_katalon_release-6.2.1_source_com.kms.katalon.product_target/version=1.0.0
+repositories/file\:_Applications_jenkins-2.138.1-2_apps_jenkins_jenkins_home_workspace_katalon_release-6.2.1_source_com.kms.katalon.product_target_targetPlatformRepository/enabled=true
+repositories/file\:_Applications_jenkins-2.138.1-2_apps_jenkins_jenkins_home_workspace_katalon_release-6.2.1_source_com.kms.katalon.product_target_targetPlatformRepository/isSystem=false
+repositories/file\:_Applications_jenkins-2.138.1-2_apps_jenkins_jenkins_home_workspace_katalon_release-6.2.1_source_com.kms.katalon.product_target_targetPlatformRepository/name=TychoTargetPlatform
+repositories/file\:_Applications_jenkins-2.138.1-2_apps_jenkins_jenkins_home_workspace_katalon_release-6.2.1_source_com.kms.katalon.product_target_targetPlatformRepository/suffix=content.xml
+repositories/file\:_Applications_jenkins-2.138.1-2_apps_jenkins_jenkins_home_workspace_katalon_release-6.2.1_source_com.kms.katalon.product_target_targetPlatformRepository/type=org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository
+repositories/file\:_Applications_jenkins-2.138.1-2_apps_jenkins_jenkins_home_workspace_katalon_release-6.2.1_source_com.kms.katalon.product_target_targetPlatformRepository/uri=file\:/Applications/jenkins-2.138.1-2/apps/jenkins/jenkins_home/workspace/katalon_release-6.2.1/source/com.kms.katalon.product/target/targetPlatformRepository/
+repositories/file\:_Applications_jenkins-2.138.1-2_apps_jenkins_jenkins_home_workspace_katalon_release-6.2.1_source_com.kms.katalon.product_target_targetPlatformRepository/version=0.0.1

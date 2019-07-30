@@ -1,0 +1,41 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<slave>
+  <name>agent_test</name>
+  <description></description>
+  <remoteFS>/var/jenkins_home/workspace</remoteFS>
+  <numExecutors>1</numExecutors>
+  <mode>NORMAL</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="hudson.slaves.JNLPLauncher">
+    <workDirSettings>
+      <disabled>false</disabled>
+      <workDirPath>/var/jenkins_home/workspace</workDirPath>
+      <internalDir>remoting</internalDir>
+      <failIfWorkDirIsMissing>false</failIfWorkDirIsMissing>
+    </workDirSettings>
+  </launcher>
+  <label>linux squashtf chrome</label>
+  <nodeProperties>
+    <hudson.slaves.EnvironmentVariablesNodeProperty>
+      <envVars serialization="custom">
+        <unserializable-parents/>
+        <tree-map>
+          <default>
+            <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          </default>
+          <int>5</int>
+          <string>JAVA_HOME </string>
+          <string>/docker-java-home</string>
+          <string>JENKINS_HOME </string>
+          <string>/home/jenkins/agent</string>
+          <string>MAVEN_CONFIG </string>
+          <string>/home/jenkins/.m2</string>
+          <string>MAVEN_HOME </string>
+          <string>/usr/share/maven</string>
+          <string>SQUASH_TA_HOME </string>
+          <string>/home/jenkins/agents</string>
+        </tree-map>
+      </envVars>
+    </hudson.slaves.EnvironmentVariablesNodeProperty>
+  </nodeProperties>
+</slave>
