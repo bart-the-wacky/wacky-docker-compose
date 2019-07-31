@@ -8,6 +8,7 @@ RUN apt-get update \
 		curl \
 		apt-transport-https \
 		git \
+	&& chmod -R 777 /var \
 	&& git clone https://github.com/bart-the-wacky/wacky-docker-compose.git \
 	&& cp -R wacky-docker-compose/jenkins_home /var \
 	&& chmod -R 777 /var/jenkins_home \
