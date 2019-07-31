@@ -15,7 +15,7 @@ RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-unauthenticated \
        xorg \
 	   xvfb \
-	   google-chrome-stable \
+	   chromium \
 	   chromedriver \
 	&& chmod -R 777 /var/jenkins_home \
 	&& chmod -R 777 /home/jenkins \
