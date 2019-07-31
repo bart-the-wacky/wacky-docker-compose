@@ -6,7 +6,6 @@ services:
       - 8080:8080
       - 50000:50000
       - 465:465
-      - 9515:9515
     environment:
       - JENKINS_SLAVE_AGENT_PORT=50000
       - LANG=C.UTF-8
