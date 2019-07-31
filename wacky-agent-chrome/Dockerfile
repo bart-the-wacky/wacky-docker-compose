@@ -23,6 +23,4 @@ RUN apt-get update \
 
 USER jenkins
 
-ARG user
-
 WORKDIR /var/jenkins_home
