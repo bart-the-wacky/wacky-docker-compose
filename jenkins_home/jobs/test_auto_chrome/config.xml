@@ -55,7 +55,7 @@
     <com.katalon.jenkins.plugin.ExecuteKatalonStudioTask plugin="katalon@1.0.11">
       <version>6.2.1</version>
       <location></location>
-      <executeArgs>-browserType=&quot;Chrome&quot; -retry=0 -statusDelay=15 -testSuitePath=&quot;Test Suites/test_init&quot; --config -webui.autoUpdateDrivers=true --no-sandbox -apiKey=4d90b6b4-8dcd-4242-968b-06128a89eaa2 -reportFolder=&quot;/var/jenkins_home/workspace/test_job/test_auto/Reports/test_init&quot; -reportFileName=&quot;$BUILD_TAG&quot;&quot;_chrome&quot;</executeArgs>
+      <executeArgs>-browserType=&quot;Chrome&quot; -retry=0 -statusDelay=15 -testSuitePath=&quot;Test Suites/test_init&quot; --config -webui.autoUpdateDrivers=true --disable-dev-shm-usage --no-sandbox -apiKey=4d90b6b4-8dcd-4242-968b-06128a89eaa2 -reportFolder=&quot;/var/jenkins_home/workspace/test_job/test_auto/Reports/test_init&quot; -reportFileName=&quot;$BUILD_TAG&quot;&quot;_chrome&quot;</executeArgs>
       <x11Display></x11Display>
       <xvfbConfiguration>-a -n 0 -s &quot;-screen 1 1280x1024x24&quot;</xvfbConfiguration>
     </com.katalon.jenkins.plugin.ExecuteKatalonStudioTask>
