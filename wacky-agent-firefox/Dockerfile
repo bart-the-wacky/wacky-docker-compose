@@ -4,6 +4,8 @@ MAINTAINER BARTHELEMY Romain <bart_the_wacky@hotmail.com>
 
 USER root
 
+ENV TERM='xterm'
+
 RUN apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y \
         nginx\
