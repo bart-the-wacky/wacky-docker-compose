@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#on vérifie si 
+#on vérifie si le dossier cloné de git existe bien, si ce n'est pas le cas on le clone, sinon non
 if [ ! -d "/usr/share/wacky-docker-compose" ];then
 
 	echo "Dossier inexistant, clônage de Jenkins";
@@ -15,8 +15,8 @@ fi
 
 cd /usr/share
 
-systemctl enable jenkins
-systemctl start jenkins
-systemctl status jenkins
+# systemctl enable jenkins
+# systemctl start jenkins
+# systemctl status jenkins
 
 exec "$@"
