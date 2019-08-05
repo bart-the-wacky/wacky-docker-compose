@@ -10,14 +10,10 @@ RUN apt-get update \
 		curl \
 		apt-transport-https \
 		maven \
-	&& wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
-	&& sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list' \
-	&& apt-get update \
+	&& dpkg -i https://github.com/webnicer/chrome-downloads/blob/master/x64.deb/google-chrome-stable_75.0.3770.142-1_amd64.deb
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-unauthenticated \
        xorg \
 	   xvfb \
-	   google-chrome-stable \
-	   chromedriver \
 	&& chmod -R 777 /var/jenkins_home \
 	&& chmod -R 777 /home/jenkins \
 	&& rm -rf /var/lib/apt/lists/*	
