@@ -17,6 +17,8 @@ RUN apt-get update \
 		libappindicator3-1 \
 		lsb-release \
 		xdg-utils \
+		chromium \
+		chromedriver \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y --allow-unauthenticated \
        xorg \
 	   xvfb \

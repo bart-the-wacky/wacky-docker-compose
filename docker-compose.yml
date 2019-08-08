@@ -1,4 +1,4 @@
-version: "3"
+version: '3.7'
 services:
   jenkins:
     image: bartthewacky/wacky-jenkins-kat
@@ -6,21 +6,19 @@ services:
       - 8080:8080
       - 50000:50000
       - 465:465
+      - 587:587
     environment:
       - JENKINS_SLAVE_AGENT_PORT=50000
-      - LANG=C.UTF-8
       - JENKINS_UC=https://updates.jenkins.io
       - PWD=/
       - HOME=/var/jenkins_home
       - COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log
       - JENKINS_HOME=/var/jenkins_home
-      - CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-      - JAVA_DEBIAN_VERSION=8u181-b13-2~deb9u1
+      - CONF_HOME=/var/jenkins_home
       - TERM=xterm
       - JENKINS_INCREMENTALS_REPO_MIRROR=https://repo.jenkins-ci.org/incrementals
       - SHLVL=1
       - JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental
-      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
       - JENKINS_VERSION=2.151
       - JENKINS_HOST_HOME=/data/jenkins
     volumes:
@@ -37,77 +35,101 @@ services:
   agent-chrome:
     image: bartthewacky/wacky-agent
     environment:
-      - LANG=C.UTF-8
-      - MAVEN_HOME=/usr/share/maven
-      - JAVA_HOME=/docker-java-home
-      - JAVA_VERSION=8u171
       - PWD=/home/jenkins
       - HOME=/home/jenkins
       - JENKINS_AGENT_NAME=agent_chrome
       - JENKINS_SECRET=829f4bb45f8deeff3eae48ffdc9c08b30d48f65ce9023d5b2ffecb3bce41906b
-      - MAVEN_CONFIG=/home/jenkins/.m2
       - JENKINS_HOME=/home/jenkins/agent
-      - CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-      - AGENT_WORKDIR=/home/jenkins/agent
-      - JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
-      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-      - SQUASH_TA_HOME=/home/jenkins/agent
-      - JENKINS_URL=http://192.168.99.101:8080/
+      - JENKINS_URL=${JENKINS_URL}
     volumes:
       - jenkins-data:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
       - /dev/shm:/dev/shm
     build:
       context: wacky-agent-chrome/.
-    # deploy:
-      # replicas: 1
-      # restart_policy:
-        # condition: on-failure
-        # delay: 30s
-        # max_attempts: 2
     depends_on:
       - jenkins
     links: 
       - jenkins
     restart: on-failure
+    privileged: true
     
   agent-firefox:
     image: bartthewacky/wacky-agent
     environment:
-      - LANG=C.UTF-8
-      - MAVEN_HOME=/usr/share/maven
-      - JAVA_HOME=/docker-java-home
-      - JAVA_VERSION=8u171
       - PWD=/home/jenkins
       - HOME=/home/jenkins
       - JENKINS_AGENT_NAME=agent_firefox
       - JENKINS_SECRET=af0c43cc22c7db5f8738ba4bdb3f54528e995ec6ff44e068f97398fea4234d0c
-      - MAVEN_CONFIG=/home/jenkins/.m2
       - JENKINS_HOME=/home/jenkins/agent
-      - CA_CERTIFICATES_JAVA_VERSION=20170531+nmu1
-      - AGENT_WORKDIR=/home/jenkins/agent
-      - JAVA_DEBIAN_VERSION=8u171-b11-1~deb9u1
-      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-      - SQUASH_TA_HOME=/home/jenkins/agent
-      - JENKINS_URL=http://192.168.99.101:8080/
+      - JENKINS_URL=${JENKINS_URL}
     volumes:
       - jenkins-data:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
     build:
       context: wacky-agent-firefox/.
-    # deploy:
-      # replicas: 1
-      # restart_policy:
-        # condition: on-failure
-        # delay: 600s
-        # max_attempts: 2
-        # window: 120s
     depends_on:
       - jenkins
     links: 
       - jenkins
     restart: on-failure
+  squash-tm-pg:
+    container_name: squash-tm-pg     
+    environment:
+      POSTGRES_DB: ${DB_DATABASE}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_USER: ${DB_USER}
+    image: postgres:9.6.12
+    volumes:
+      - /var/lib/db-postgresql:/var/lib/postgresql/data
+    networks:
+      - db-network 
+      
+  squash-tm:
+    depends_on:
+      - squash-tm-pg
+    environment:
+      POSTGRES_ENV_POSTGRES_USER: ${DB_USER}
+      POSTGRES_ENV_POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_ENV_POSTGRES_DB: ${DB_DATABASE}
+      VIRTUAL_HOST: mysquash.example.com
+      HTTP_MAX_HEADER_SIZE: 1048576
+      CATALINA_OPTS: '-Xms768m -Xmx1024m'
+    ports:
+      - 8090:8080/tcp
+    image: squashtest/squash-tm
+    links:
+      - squash-tm-pg:postgres
+    volumes:
+      - squash-tm-logs:/opt/squash-tm/logs
+      - squash-tm-plugins:/opt/squash-tm/plugins
+      - /var/run/docker.sock:/tmp/docker.sock
+    networks:
+      - nginx-proxy
+      - db-network
+    healthcheck:
+        test: ["CMD", "curl", "-f", "http://192.168.99.101:8090/squash"]
+        interval: 45s
+        timeout: 10s
+        retries: 5
+  
+  nginx-proxy:
+    container_name: nginx
+    image: jwilder/nginx-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    networks:
+      - nginx-proxy
 
 volumes:
   jenkins-home:
   jenkins-data:
+  squash-tm-logs:
+  squash-tm-plugins:
+
+networks:
+  nginx-proxy:
+  db-network:
