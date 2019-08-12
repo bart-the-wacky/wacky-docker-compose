@@ -103,6 +103,12 @@ services:
     volumes:
       - squash-tm-logs:/opt/squash-tm/logs
       - squash-tm-plugins:/opt/squash-tm/plugins
+      - squash-tm-lucene: /opt/squash-tm/luceneindexes
+      - squash-tm-conf: /opt/squash-tm/conf
+      - squash-tm-tmp: /opt/squash-tm/tmp
+      - squash-tm-bundles: /opt/squash-tm/bundles 
+      - squash-tm-logs: /opt/squash-tm/logs
+      - squash-tm-jettyhome: /srv/squash-tm/jettyhome
       - /var/run/docker.sock:/tmp/docker.sock
     networks:
       - nginx-proxy
@@ -129,6 +135,12 @@ volumes:
   jenkins-data:
   squash-tm-logs:
   squash-tm-plugins:
+  squash-tm-lucene:
+  squash-tm-conf:
+  squash-tm-tmp:
+  squash-tm-bundles:
+  squash-tm-logs:
+  squash-tm-jettyhome:
 
 networks:
   nginx-proxy:
